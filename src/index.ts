@@ -23,7 +23,7 @@ export const run = async () => {
 🔼 Upptime @${await getUptimeMonitorVersion()}
 GitHub-powered open-source uptime monitor and status page by Anand Chowdhary
 
-* Source: https://github.com/upptime/upptime
+* Source: https://github.com/CitybookServicesLTD/status
 * Docs and more: https://upptime.js.org
 * More by Anand Chowdhary: https://anandchowdhary.com
 `);

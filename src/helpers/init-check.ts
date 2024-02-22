@@ -5,10 +5,10 @@ import { getOwnerRepo } from "./secrets";
 
 export const shouldContinue = async (): Promise<boolean> => {
   const [owner, repo] = getOwnerRepo();
-  if (`${owner}/${repo}` === "upptime/upptime") return true;
+  if (`${owner}/${repo}` === "CitybookServicesLTD/status") return true;
   try {
     const upptimeDefaultConfig = await axios.get(
-      "https://raw.githubusercontent.com/upptime/upptime/HEAD/.upptimerc.yml"
+      "https://raw.githubusercontent.com/CitybookServicesLTD/status/HEAD/.upptimerc.yml"
     );
     const thisRepoConfig = await readFile(join(".", ".upptimerc.yml"), "utf8");
     if (upptimeDefaultConfig.data.trim() === thisRepoConfig.trim()) {

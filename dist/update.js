@@ -142,7 +142,7 @@ const update = async (shouldCommit = false) => {
                 console.log("Using tcp-ping instead of curl");
                 try {
                     let status = "up";
-                    // https://github.com/upptime/upptime/discussions/888
+                    // https://github.com/CitybookServicesLTD/status/discussions/888
                     const url = environment_1.replaceEnvironmentVariables(site.url);
                     let address = url;
                     if (net_1.isIP(url)) {
@@ -310,7 +310,7 @@ code: ${result.httpCode}
 responseTime: ${responseTime}
 lastUpdated: ${new Date().toISOString()}
 startTime: ${startTime.toISOString()}
-generator: Upptime <https://github.com/upptime/upptime>
+generator: Upptime <https://github.com/CitybookServicesLTD/status>
 `);
                 git_1.commit(((config.commitMessages || {}).statusChange ||
                     "$PREFIX $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms) [skip ci] [upptime]")

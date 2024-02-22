@@ -4,8 +4,8 @@
 
 ### 🐛 Bug fixes
 
-- [`a5560d2`](https://github.com/upptime/uptime-monitor/commit/a5560d2)  Remove WARP for upptime/upptime#918
-(Issues: [`upptime/upptime#918`](https://github.com/upptime/upptime/issues/918))
+- [`a5560d2`](https://github.com/upptime/uptime-monitor/commit/a5560d2)  Remove WARP for CitybookServicesLTD/status#918
+(Issues: [`CitybookServicesLTD/status#918`](https://github.com/CitybookServicesLTD/status/issues/918))
 
 ## v1.36.3 (2024-01-25)
 
@@ -13,8 +13,8 @@
 
 ### 🐛 Bug fixes
 
-- [`9b7e7be`](https://github.com/upptime/uptime-monitor/commit/9b7e7be)  Fix upptime/upptime#918 by adding WARP globally
-(Issues: [`upptime/upptime#918`](https://github.com/upptime/upptime/issues/918))
+- [`9b7e7be`](https://github.com/upptime/uptime-monitor/commit/9b7e7be)  Fix CitybookServicesLTD/status#918 by adding WARP globally
+(Issues: [`CitybookServicesLTD/status#918`](https://github.com/CitybookServicesLTD/status/issues/918))
 
 ## v1.36.2 (2024-01-21)
 
@@ -22,8 +22,8 @@
 
 ### 🐛 Bug fixes
 
-- [`47e177b`](https://github.com/upptime/uptime-monitor/commit/47e177b)  Fix upptime/upptime#918 by adding warp
-(Issues: [`upptime/upptime#918`](https://github.com/upptime/upptime/issues/918))
+- [`47e177b`](https://github.com/upptime/uptime-monitor/commit/47e177b)  Fix CitybookServicesLTD/status#918 by adding warp
+(Issues: [`CitybookServicesLTD/status#918`](https://github.com/CitybookServicesLTD/status/issues/918))
 
 ### ⬆️ Dependency updates
 
@@ -127,8 +127,8 @@
 
 ### 🐛 Bug fixes
 
-- [`54100ae`](https://github.com/upptime/uptime-monitor/commit/54100ae)  Fix upptime/upptime#838 login for time difference
-(Issues: [`upptime/upptime#838`](https://github.com/upptime/upptime/issues/838))
+- [`54100ae`](https://github.com/upptime/uptime-monitor/commit/54100ae)  Fix CitybookServicesLTD/status#838 login for time difference
+(Issues: [`CitybookServicesLTD/status#838`](https://github.com/CitybookServicesLTD/status/issues/838))
 
 ## v1.31.0 (2023-08-18)
 
@@ -199,8 +199,8 @@
 ### ✨ New features
 
 - [`66bdb6b`](https://github.com/upptime/uptime-monitor/commit/66bdb6b)  Add .gitattributes generator
-- [`441513a`](https://github.com/upptime/uptime-monitor/commit/441513a)  Add support for delays (fixes upptime/upptime#625)
-(Issues: [`upptime/upptime#625`](https://github.com/upptime/upptime/issues/625))- [`a9073ac`](https://github.com/upptime/uptime-monitor/commit/a9073ac)  Custom messages in up/down notifications
+- [`441513a`](https://github.com/upptime/uptime-monitor/commit/441513a)  Add support for delays (fixes CitybookServicesLTD/status#625)
+(Issues: [`CitybookServicesLTD/status#625`](https://github.com/CitybookServicesLTD/status/issues/625))- [`a9073ac`](https://github.com/upptime/uptime-monitor/commit/a9073ac)  Custom messages in up/down notifications
 - [`710ef81`](https://github.com/upptime/uptime-monitor/commit/710ef81)  Add Microsoft Teams integration
 
 ### 🐛 Bug fixes
@@ -222,8 +222,8 @@
 
 ### ♻️ Updates
 
-- [`e1a90da`](https://github.com/upptime/uptime-monitor/commit/e1a90da)  Rename default UA (fixed upptime/upptime#320)
-(Issues: [`upptime/upptime#320`](https://github.com/upptime/upptime/issues/320))- [`569136c`](https://github.com/upptime/uptime-monitor/commit/569136c)  Release #154
+- [`e1a90da`](https://github.com/upptime/uptime-monitor/commit/e1a90da)  Rename default UA (fixed CitybookServicesLTD/status#320)
+(Issues: [`CitybookServicesLTD/status#320`](https://github.com/CitybookServicesLTD/status/issues/320))- [`569136c`](https://github.com/upptime/uptime-monitor/commit/569136c)  Release #154
 (Issues: [`#154`](https://github.com/upptime/uptime-monitor/issues/154))
 
 ## v1.26.3 (2021-04-20)
@@ -232,10 +232,10 @@
 
 ### 🐛 Bug fixes
 
-- [`712da31`](https://github.com/upptime/uptime-monitor/commit/712da31)  Use list for issues, not user API (fixed upptime/upptime#311)
-(Issues: [`upptime/upptime#311`](https://github.com/upptime/upptime/issues/311))- [`9aa64cc`](https://github.com/upptime/uptime-monitor/commit/9aa64cc)  Add fallback for commit (fixed upptime/upptime#262)
-(Issues: [`upptime/upptime#262`](https://github.com/upptime/upptime/issues/262))- [`d1ac90c`](https://github.com/upptime/uptime-monitor/commit/d1ac90c)  Set env for replacing (fixed upptime/upptime#319)
-(Issues: [`upptime/upptime#319`](https://github.com/upptime/upptime/issues/319))
+- [`712da31`](https://github.com/upptime/uptime-monitor/commit/712da31)  Use list for issues, not user API (fixed CitybookServicesLTD/status#311)
+(Issues: [`CitybookServicesLTD/status#311`](https://github.com/CitybookServicesLTD/status/issues/311))- [`9aa64cc`](https://github.com/upptime/uptime-monitor/commit/9aa64cc)  Add fallback for commit (fixed CitybookServicesLTD/status#262)
+(Issues: [`CitybookServicesLTD/status#262`](https://github.com/CitybookServicesLTD/status/issues/262))- [`d1ac90c`](https://github.com/upptime/uptime-monitor/commit/d1ac90c)  Set env for replacing (fixed CitybookServicesLTD/status#319)
+(Issues: [`CitybookServicesLTD/status#319`](https://github.com/CitybookServicesLTD/status/issues/319))
 
 ## v1.26.2 (2021-04-20)
 
@@ -276,8 +276,8 @@
 ### ♻️ Updates
 
 - [`12d282c`](https://github.com/upptime/uptime-monitor/commit/12d282c)  Use 5 attempts for TCP
-- [`4f1ee7d`](https://github.com/upptime/uptime-monitor/commit/4f1ee7d)  Update CI to use peaceiris/actions-gh-pages (fixed upptime/upptime#118)
-(Issues: [`upptime/upptime#118`](https://github.com/upptime/upptime/issues/118))- [`cde5e47`](https://github.com/upptime/uptime-monitor/commit/cde5e47)  Use default GITHUB_TOKEN in CI
+- [`4f1ee7d`](https://github.com/upptime/uptime-monitor/commit/4f1ee7d)  Update CI to use peaceiris/actions-gh-pages (fixed CitybookServicesLTD/status#118)
+(Issues: [`CitybookServicesLTD/status#118`](https://github.com/CitybookServicesLTD/status/issues/118))- [`cde5e47`](https://github.com/upptime/uptime-monitor/commit/cde5e47)  Use default GITHUB_TOKEN in CI
 
 ### ⬆️ Dependency updates
 
@@ -406,7 +406,7 @@
 
 ### ♻️ Updates
 
-- [`eaad729`](https://github.com/upptime/uptime-monitor/commit/eaad729)  Add logs for https://github.com/upptime/upptime/issues/150
+- [`eaad729`](https://github.com/upptime/uptime-monitor/commit/eaad729)  Add logs for https://github.com/CitybookServicesLTD/status/issues/150
 
 ### ⬆️ Dependency updates
 
@@ -434,8 +434,8 @@
 
 ### 🐛 Bug fixes
 
-- [`72bfce1`](https://github.com/upptime/uptime-monitor/commit/72bfce1)  Fix upptime/upptime#127 by adding max redirects
-(Issues: [`upptime/upptime#127`](https://github.com/upptime/upptime/issues/127))
+- [`72bfce1`](https://github.com/upptime/uptime-monitor/commit/72bfce1)  Fix CitybookServicesLTD/status#127 by adding max redirects
+(Issues: [`CitybookServicesLTD/status#127`](https://github.com/CitybookServicesLTD/status/issues/127))
 
 ## v1.23.11 (2020-12-19)
 
@@ -451,8 +451,8 @@
 
 ### 🐛 Bug fixes
 
-- [`1315897`](https://github.com/upptime/uptime-monitor/commit/1315897)  Fix upptime/upptime#125 by adding assignees separately
-(Issues: [`upptime/upptime#125`](https://github.com/upptime/upptime/issues/125))
+- [`1315897`](https://github.com/upptime/uptime-monitor/commit/1315897)  Fix CitybookServicesLTD/status#125 by adding assignees separately
+(Issues: [`CitybookServicesLTD/status#125`](https://github.com/CitybookServicesLTD/status/issues/125))
 
 ### ⬆️ Dependency updates
 
@@ -464,8 +464,8 @@
 
 ### 🐛 Bug fixes
 
-- [`51702c9`](https://github.com/upptime/uptime-monitor/commit/51702c9)  Fixed upptime/upptime#102, thanks to Max Berman
-(Issues: [`upptime/upptime#102`](https://github.com/upptime/upptime/issues/102))
+- [`51702c9`](https://github.com/upptime/uptime-monitor/commit/51702c9)  Fixed CitybookServicesLTD/status#102, thanks to Max Berman
+(Issues: [`CitybookServicesLTD/status#102`](https://github.com/CitybookServicesLTD/status/issues/102))
 
 ### ⬆️ Dependency updates
 
@@ -490,8 +490,8 @@
 
 ### 🐛 Bug fixes
 
-- [`f7cd5c6`](https://github.com/upptime/uptime-monitor/commit/f7cd5c6)  Don&#x27;t publish private sites (fixed upptime/upptime#107)
-(Issues: [`upptime/upptime#107`](https://github.com/upptime/upptime/issues/107))
+- [`f7cd5c6`](https://github.com/upptime/uptime-monitor/commit/f7cd5c6)  Don&#x27;t publish private sites (fixed CitybookServicesLTD/status#107)
+(Issues: [`CitybookServicesLTD/status#107`](https://github.com/CitybookServicesLTD/status/issues/107))
 
 ## v1.23.7 (2020-12-06)
 
@@ -650,8 +650,8 @@
 
 ### ✨ New features
 
-- [`78190af`](https://github.com/upptime/uptime-monitor/commit/78190af)  Add support for custom body down/degraded (fixed upptime/upptime#101)
-(Issues: [`upptime/upptime#101`](https://github.com/upptime/upptime/issues/101))
+- [`78190af`](https://github.com/upptime/uptime-monitor/commit/78190af)  Add support for custom body down/degraded (fixed CitybookServicesLTD/status#101)
+(Issues: [`CitybookServicesLTD/status#101`](https://github.com/CitybookServicesLTD/status/issues/101))
 
 ### ♻️ Updates
 
@@ -666,8 +666,8 @@
 
 ### ✨ New features
 
-- [`42fa5dc`](https://github.com/upptime/uptime-monitor/commit/42fa5dc)  Add support for CURL body (fixed upptime/upptime#99)
-(Issues: [`upptime/upptime#99`](https://github.com/upptime/upptime/issues/99))
+- [`42fa5dc`](https://github.com/upptime/uptime-monitor/commit/42fa5dc)  Add support for CURL body (fixed CitybookServicesLTD/status#99)
+(Issues: [`CitybookServicesLTD/status#99`](https://github.com/CitybookServicesLTD/status/issues/99))
 
 ### ⬆️ Dependency updates
 
@@ -678,8 +678,8 @@
 
 ### 🐛 Bug fixes
 
-- [`a1aa9a4`](https://github.com/upptime/uptime-monitor/commit/a1aa9a4)  Add URLs in notifications (fixed upptime/upptime#97)
-(Issues: [`upptime/upptime#97`](https://github.com/upptime/upptime/issues/97))
+- [`a1aa9a4`](https://github.com/upptime/uptime-monitor/commit/a1aa9a4)  Add URLs in notifications (fixed CitybookServicesLTD/status#97)
+(Issues: [`CitybookServicesLTD/status#97`](https://github.com/CitybookServicesLTD/status/issues/97))
 
 ## [v1.20.5](https://github.com/upptime/uptime-monitor/compare/v1.20.4...v1.20.5) (2020-11-29)
 
@@ -716,15 +716,15 @@
 
 ### 🐛 Bug fixes
 
-- [`eec90af`](https://github.com/upptime/uptime-monitor/commit/eec90af)  Fix upptime/upptime#94 by using string replace
-(Issues: [`upptime/upptime#94`](https://github.com/upptime/upptime/issues/94))
+- [`eec90af`](https://github.com/upptime/uptime-monitor/commit/eec90af)  Fix CitybookServicesLTD/status#94 by using string replace
+(Issues: [`CitybookServicesLTD/status#94`](https://github.com/CitybookServicesLTD/status/issues/94))
 
 ## [v1.20.0](https://github.com/upptime/uptime-monitor/compare/v1.19.0...v1.20.0) (2020-11-28)
 
 ### ✨ New features
 
-- [`75f7a59`](https://github.com/upptime/uptime-monitor/commit/75f7a59)  Add Telegram notifications (fixed upptime/upptime#88)
-(Issues: [`upptime/upptime#88`](https://github.com/upptime/upptime/issues/88))
+- [`75f7a59`](https://github.com/upptime/uptime-monitor/commit/75f7a59)  Add Telegram notifications (fixed CitybookServicesLTD/status#88)
+(Issues: [`CitybookServicesLTD/status#88`](https://github.com/CitybookServicesLTD/status/issues/88))
 
 ## [v1.19.0](https://github.com/upptime/uptime-monitor/compare/v1.18.3...v1.19.0) (2020-11-28)
 
@@ -741,7 +741,7 @@
 
 ### 🐛 Bug fixes
 
-- [`74dd5ce`](https://github.com/upptime/uptime-monitor/commit/74dd5ce)  Don&#x27;t delete files from upptime/upptime
+- [`74dd5ce`](https://github.com/upptime/uptime-monitor/commit/74dd5ce)  Don&#x27;t delete files from CitybookServicesLTD/status
 
 ## [v1.18.2](https://github.com/upptime/uptime-monitor/compare/v1.18.1...v1.18.2) (2020-11-28)
 
@@ -819,7 +819,7 @@
 ### ✨ New features
 
 - [`f21eaad`](https://github.com/upptime/uptime-monitor/commit/f21eaad)  Add support for disabling host verify
-(Issues: [`upptime/upptime#57`](https://github.com/upptime/upptime/issues/57))
+(Issues: [`CitybookServicesLTD/status#57`](https://github.com/CitybookServicesLTD/status/issues/57))
 
 ## [v1.15.3](https://github.com/upptime/uptime-monitor/compare/v1.15.2...v1.15.3) (2020-11-23)
 
@@ -837,22 +837,22 @@
 
 ### 🐛 Bug fixes
 
-- [`f892d8d`](https://github.com/upptime/uptime-monitor/commit/f892d8d)  Fix upptime/upptime#75
-(Issues: [`upptime/upptime#75`](https://github.com/upptime/upptime/issues/75))
+- [`f892d8d`](https://github.com/upptime/uptime-monitor/commit/f892d8d)  Fix CitybookServicesLTD/status#75
+(Issues: [`CitybookServicesLTD/status#75`](https://github.com/CitybookServicesLTD/status/issues/75))
 
 ## [v1.15.1](https://github.com/upptime/uptime-monitor/compare/v1.15.0...v1.15.1) (2020-11-22)
 
 ### 🐛 Bug fixes
 
-- [`337b3bd`](https://github.com/upptime/uptime-monitor/commit/337b3bd)  Fix upptime/upptime#74
-(Issues: [`upptime/upptime#74`](https://github.com/upptime/upptime/issues/74))
+- [`337b3bd`](https://github.com/upptime/uptime-monitor/commit/337b3bd)  Fix CitybookServicesLTD/status#74
+(Issues: [`CitybookServicesLTD/status#74`](https://github.com/CitybookServicesLTD/status/issues/74))
 
 ## [v1.15.0](https://github.com/upptime/uptime-monitor/compare/v1.14.5...v1.15.0) (2020-11-22)
 
 ### ✨ New features
 
 - [`ee91b1e`](https://github.com/upptime/uptime-monitor/commit/ee91b1e)  Add support for degraded performance check
-(Issues: [`upptime/upptime#72`](https://github.com/upptime/upptime/issues/72))
+(Issues: [`CitybookServicesLTD/status#72`](https://github.com/CitybookServicesLTD/status/issues/72))
 
 ### ♻️ Updates
 
@@ -879,7 +879,7 @@
 
 ### 🐛 Bug fixes
 
-- [`8af0eb2`](https://github.com/upptime/uptime-monitor/commit/8af0eb2)  All workflows should run in upptime/upptime
+- [`8af0eb2`](https://github.com/upptime/uptime-monitor/commit/8af0eb2)  All workflows should run in CitybookServicesLTD/status
 
 ## [v1.14.2](https://github.com/upptime/uptime-monitor/compare/v1.14.1...v1.14.2) (2020-11-22)
 
@@ -898,7 +898,7 @@
 ### ♻️ Updates
 
 - [`c000ab2`](https://github.com/upptime/uptime-monitor/commit/c000ab2)  Skip running workflows if the config is same
-(Issues: [`upptime/upptime#61`](https://github.com/upptime/upptime/issues/61) [`upptime/upptime#62`](https://github.com/upptime/upptime/issues/62))
+(Issues: [`CitybookServicesLTD/status#61`](https://github.com/CitybookServicesLTD/status/issues/61) [`CitybookServicesLTD/status#62`](https://github.com/CitybookServicesLTD/status/issues/62))
 
 ### ⬆️ Dependency updates
 
@@ -923,7 +923,7 @@
 
 ### ✨ New features
 
-- [`010d02c`](https://github.com/upptime/uptime-monitor/commit/010d02c)  Add support for expected status codes (fixed com/upptime/upptime#60)
+- [`010d02c`](https://github.com/upptime/uptime-monitor/commit/010d02c)  Add support for expected status codes (fixed com/CitybookServicesLTD/status#60)
 
 ## [v1.12.3](https://github.com/upptime/uptime-monitor/compare/v1.12.2...v1.12.3) (2020-11-18)
 
@@ -951,15 +951,15 @@
 
 ### ✨ New features
 
-- [`49ea215`](https://github.com/upptime/uptime-monitor/commit/49ea215)  Add support for insecure HTTPS (fixed upptime/upptime#57)
-(Issues: [`upptime/upptime#57`](https://github.com/upptime/upptime/issues/57))
+- [`49ea215`](https://github.com/upptime/uptime-monitor/commit/49ea215)  Add support for insecure HTTPS (fixed CitybookServicesLTD/status#57)
+(Issues: [`CitybookServicesLTD/status#57`](https://github.com/CitybookServicesLTD/status/issues/57))
 
 ## [v1.11.3](https://github.com/upptime/uptime-monitor/compare/v1.11.2...v1.11.3) (2020-11-17)
 
 ### 🐛 Bug fixes
 
-- [`c6f6376`](https://github.com/upptime/uptime-monitor/commit/c6f6376)  Add temporary bug fix (upptime/upptime#56)
-(Issues: [`upptime/upptime#56`](https://github.com/upptime/upptime/issues/56))
+- [`c6f6376`](https://github.com/upptime/uptime-monitor/commit/c6f6376)  Add temporary bug fix (CitybookServicesLTD/status#56)
+(Issues: [`CitybookServicesLTD/status#56`](https://github.com/CitybookServicesLTD/status/issues/56))
 
 ### ⬆️ Dependency updates
 
@@ -1020,7 +1020,7 @@
 ### ♻️ Updates
 
 - [`dc6a6e5`](https://github.com/upptime/uptime-monitor/commit/dc6a6e5)  Change upptime@koj.co -&gt; forwarder email
-(Issues: [`upptime/upptime#49`](https://github.com/upptime/upptime/issues/49))
+(Issues: [`CitybookServicesLTD/status#49`](https://github.com/CitybookServicesLTD/status/issues/49))
 
 ### ⬆️ Dependency updates
 
@@ -1037,15 +1037,15 @@
 
 ### 🐛 Bug fixes
 
-- [`91f5698`](https://github.com/upptime/uptime-monitor/commit/91f5698)  Fix broken regex (upptime/upptime#49)
-(Issues: [`upptime/upptime#49`](https://github.com/upptime/upptime/issues/49))
+- [`91f5698`](https://github.com/upptime/uptime-monitor/commit/91f5698)  Fix broken regex (CitybookServicesLTD/status#49)
+(Issues: [`CitybookServicesLTD/status#49`](https://github.com/CitybookServicesLTD/status/issues/49))
 
 ## [v1.10.3](https://github.com/upptime/uptime-monitor/compare/v1.10.2...v1.10.3) (2020-11-02)
 
 ### 🐛 Bug fixes
 
 - [`eeecfef`](https://github.com/upptime/uptime-monitor/commit/eeecfef)  Use workflow owner/repo
-(Issues: [`upptime/upptime#48`](https://github.com/upptime/upptime/issues/48))
+(Issues: [`CitybookServicesLTD/status#48`](https://github.com/CitybookServicesLTD/status/issues/48))
 
 ## [v1.10.2](https://github.com/upptime/uptime-monitor/compare/v1.10.1...v1.10.2) (2020-11-02)
 

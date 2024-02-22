@@ -7,7 +7,7 @@ import { getOwnerRepo } from "./helpers/secrets";
 
 export const updateDependencies = async () => {
   const [owner, repo] = getOwnerRepo();
-  if (`${owner}/${repo}` !== "upptime/upptime") return;
+  if (`${owner}/${repo}` !== "CitybookServicesLTD/status") return;
 
   const config = await getConfig();
   const octokit = await getOctokit();

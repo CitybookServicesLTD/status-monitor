@@ -106,7 +106,7 @@ export interface SiteHistory {
   responseTime: number;
   lastUpdated?: string;
   startTime?: string;
-  generator: "Upptime <https://github.com/upptime/upptime>";
+  generator: "Upptime <https://github.com/CitybookServicesLTD/status>";
 }
 
 export interface SiteStatus {

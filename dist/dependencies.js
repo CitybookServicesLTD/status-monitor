@@ -9,7 +9,7 @@ const github_1 = require("./helpers/github");
 const secrets_1 = require("./helpers/secrets");
 const updateDependencies = async () => {
     const [owner, repo] = secrets_1.getOwnerRepo();
-    if (`${owner}/${repo}` !== "upptime/upptime")
+    if (`${owner}/${repo}` !== "CitybookServicesLTD/status")
         return;
     const config = await config_1.getConfig();
     const octokit = await github_1.getOctokit();

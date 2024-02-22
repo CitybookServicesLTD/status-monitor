@@ -2,7 +2,7 @@
 
 This repository contains Upptime's GitHub Action's source code.
 
-[**To get started, visit upptime/upptime →**](https://github.com/upptime/upptime)
+[**To get started, visit CitybookServicesLTD/status →**](https://github.com/CitybookServicesLTD/status)
 
 [![Build CI](https://github.com/upptime/uptime-monitor/workflows/Build%20CI/badge.svg)](https://github.com/upptime/uptime-monitor/actions?query=workflow%3A%22Build+CI%22)
 [![Release CI](https://github.com/upptime/uptime-monitor/workflows/Release%20CI/badge.svg)](https://github.com/upptime/uptime-monitor/actions?query=workflow%3A%22Release+CI%22)
@@ -13,7 +13,7 @@ This repository is for Upptime's GitHub Action. We love contributions, so please
 
 ### Issues
 
-We use the [upptime/upptime](https://github.com/upptime/upptime) repository for issues for all projects, including this one. If you found a bug or have a feature request, [open an issue](https://github.com/upptime/upptime/issues) in the Upptime repository and add the label "action".
+We use the [CitybookServicesLTD/status](https://github.com/CitybookServicesLTD/status) repository for issues for all projects, including this one. If you found a bug or have a feature request, [open an issue](https://github.com/CitybookServicesLTD/status/issues) in the Upptime repository and add the label "action".
 
 ## 💻 Usage
 

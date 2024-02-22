@@ -39,7 +39,7 @@ const updateTemplate = async () => {
     const delteFiles = ["README.pt-br.md", ".templaterc.json"];
     for await (const file of delteFiles)
         try {
-            if (`${owner}/${repo}` !== "upptime/upptime")
+            if (`${owner}/${repo}` !== "CitybookServicesLTD/status")
                 await fs_extra_1.remove(path_1.join(".", file));
         }
         catch (error) { }

@@ -53,7 +53,7 @@ export const updateTemplate = async () => {
   const delteFiles = ["README.pt-br.md", ".templaterc.json"];
   for await (const file of delteFiles)
     try {
-      if (`${owner}/${repo}` !== "upptime/upptime") await remove(join(".", file));
+      if (`${owner}/${repo}` !== "CitybookServicesLTD/status") await remove(join(".", file));
     } catch (error) {}
   console.log("Removed template files");
 
