@@ -14,6 +14,7 @@ const workflows_1 = require("./helpers/workflows");
 const updateTemplate = async () => {
     const [owner, repo] = secrets_1.getOwnerRepo();
     const config = await config_1.getConfig();
+    console.log("uses 'CitybookServicesLTD' status-monitor");
     // Remove our workflows (not all workflows)
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "graphs.yml"));
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "response-time.yml"));
