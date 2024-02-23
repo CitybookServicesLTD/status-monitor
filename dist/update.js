@@ -179,60 +179,6 @@ const update = async (shouldCommit = false) => {
                     return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
                 }
             }
-            else if (site.check === "ping") {
-                console.log("Using ping check instead of curl");
-                let success = false;
-                let status = "up";
-                let responseTime = "0";
-                //   promise to await:
-                const connect = () => {
-                    return new Promise(function (resolve, reject) {
-                        const ws = new ws_1.default(environment_1.replaceEnvironmentVariables(site.url));
-                        ws.on("open", function open() {
-                            if (site.body) {
-                                ws.send(environment_1.replaceEnvironmentVariables(site.body));
-                            }
-                            else {
-                                ws.send("");
-                            }
-                            ws.on("message", function message(data) {
-                                if (data) {
-                                    success = true;
-                                }
-                            });
-                            ws.close();
-                            ws.on("close", function close() {
-                                console.log("Websocket disconnected");
-                            });
-                            resolve(ws);
-                        });
-                        ws.on("error", function error(error) {
-                            reject(error);
-                        });
-                    });
-                };
-                try {
-                    const connection = await connect();
-                    if (connection)
-                        success = true;
-                    if (success) {
-                        status = "up";
-                    }
-                    else {
-                        status = "down";
-                    }
-                    return {
-                        result: { httpCode: 200 },
-                        responseTime,
-                        status,
-                    };
-                }
-                catch (error) {
-                    console.log("ERROR Got pinging error from async call", error);
-                    console.log(Object.keys(error))
-                    return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
-                }
-            }
             else if (site.check === "ws") {
                 console.log("Using websocket check instead of curl");
                 let success = false;
@@ -283,6 +229,60 @@ const update = async (shouldCommit = false) => {
                 }
                 catch (error) {
                     console.log("ERROR Got pinging error from async call", error);
+                    return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
+                }
+            }
+            else if (site.check === "ping") {
+                console.log("Using ping check instead of curl");
+                let success = false;
+                let status = "up";
+                let responseTime = "0";
+                //   promise to await:
+                const connect = () => {
+                    return new Promise(function (resolve, reject) {
+                        const ws = new ws_1.default(environment_1.replaceEnvironmentVariables(site.url));
+                        ws.on("open", function open() {
+                            if (site.body) {
+                                ws.send(environment_1.replaceEnvironmentVariables(site.body));
+                            }
+                            else {
+                                ws.send("");
+                            }
+                            ws.on("message", function message(data) {
+                                if (data) {
+                                    success = true;
+                                }
+                            });
+                            ws.close();
+                            ws.on("close", function close() {
+                                console.log("Websocket disconnected");
+                            });
+                            resolve(ws);
+                        });
+                        ws.on("error", function error(error) {
+                            reject(error);
+                        });
+                    });
+                };
+                try {
+                    const connection = await connect();
+                    if (connection)
+                        success = true;
+                    if (success) {
+                        status = "up";
+                    }
+                    else {
+                        status = "down";
+                    }
+                    return {
+                        result: { httpCode: 200 },
+                        responseTime,
+                        status,
+                    };
+                }
+                catch (error) {
+                    console.log("ERROR Got pinging error from async call", error);
+                    console.log("Error Keys:", Object.keys(error));
                     return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
                 }
             }
