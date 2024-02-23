@@ -14,7 +14,7 @@ const generateSite = async () => {
     const config = await config_1.getConfig();
     if (config.skipGeneratingWebsite)
         return;
-    const sitePackage = config.customStatusWebsitePackage || "@CitybookServicesLTD/status-page";
+    const sitePackage = config.customStatusWebsitePackage || "@upptime/status-page";
     const octokit = await github_1.getOctokit();
     const repoDetails = await octokit.repos.get({ owner, repo });
     const siteDir = "site";

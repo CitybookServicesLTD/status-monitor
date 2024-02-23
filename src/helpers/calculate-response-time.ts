@@ -51,7 +51,7 @@ export const getResponseTimeForSite = async (
     )
     /**
      * Parse the commit message
-     * @example "🟥 Broken Site is down (500 in 321 ms) [skip ci] [CitybookServicesLTD]"
+     * @example "🟥 Broken Site is down (500 in 321 ms) [skip ci] [upptime]"
      * @returns [Date, 321] where Date is the commit date
      */
     .map(

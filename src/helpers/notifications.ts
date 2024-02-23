@@ -1,10 +1,10 @@
-import { CitybookServicesLTDConfig } from "../interfaces";
+import { UpptimeConfig } from "../interfaces";
 import axios from "axios";
 import nodemailer from "nodemailer";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 import { getSecret } from "./secrets";
 
-export const sendNotification = async (config: CitybookServicesLTDConfig, text: string) => {
+export const sendNotification = async (config: UpptimeConfig, text: string) => {
   console.log("[debug] Sending notification", text);
   console.log(`[debug] Notification config has ${(config.notifications || []).length} keys`);
   for await (const notification of config.notifications || []) {

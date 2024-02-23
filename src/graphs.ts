@@ -4,15 +4,15 @@ import { join } from "path";
 import { exec } from "shelljs";
 import { commit, push } from "./helpers/git";
 import { shouldContinue } from "./helpers/init-check";
-import { CitybookServicesLTDConfig } from "./interfaces";
+import { UpptimeConfig } from "./interfaces";
 import { tempFixes } from "./helpers/temp";
 
 export const generateGraphs = async () => {
   if (!(await shouldContinue())) return;
   await mkdirp("graphs");
   await mkdirp("api");
-  const config = load(await readFile(join(".", ".CitybookServicesLTDrc.yml"), "utf8")) as CitybookServicesLTDConfig;
-  exec("npx @CitybookServicesLTD/graphs");
+  const config = load(await readFile(join(".", ".upptimerc.yml"), "utf8")) as UpptimeConfig;
+  exec("npx @upptime/graphs");
   exec("npx imagemin-cli graphs/* --out-dir=graphs");
   try {
     await remove(join(".", "graphs", "response-time.png"));

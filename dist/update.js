@@ -364,10 +364,10 @@ code: ${result.httpCode}
 responseTime: ${responseTime}
 lastUpdated: ${new Date().toISOString()}
 startTime: ${startTime.toISOString()}
-generator: CitybookServicesLTD <https://github.com/CitybookServicesLTD/status>
+generator: Upptime <https://github.com/CitybookServicesLTD/status>
 `);
                 git_1.commit(((config.commitMessages || {}).statusChange ||
-                    "$PREFIX $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms) [skip ci] [CitybookServicesLTD]")
+                    "$PREFIX $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms) [skip ci] [upptime]")
                     .replace("$PREFIX", status === "up"
                     ? config.commitPrefixStatusUp || "🟩"
                     : status === "degraded"

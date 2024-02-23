@@ -2,8 +2,8 @@ import { exec } from "shelljs";
 
 export const commit = (
   message: string,
-  name = "CitybookServicesLTD Bot",
-  email = "73812536+CitybookServicesLTD-bot@users.noreply.github.com"
+  name = "Upptime Bot",
+  email = "73812536+upptime-bot@users.noreply.github.com"
 ) => {
   exec(`git config --global user.email "${email}"`);
   exec(`git config --global user.name "${name}"`);

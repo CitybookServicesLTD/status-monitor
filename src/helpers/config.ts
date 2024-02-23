@@ -1,12 +1,12 @@
 import { readFile } from "fs-extra";
 import { load } from "js-yaml";
 import { join } from "path";
-import { CitybookServicesLTDConfig } from "../interfaces";
+import { UpptimeConfig } from "../interfaces";
 
-let __config: CitybookServicesLTDConfig | undefined = undefined;
-export const getConfig = async (): Promise<CitybookServicesLTDConfig> => {
+let __config: UpptimeConfig | undefined = undefined;
+export const getConfig = async (): Promise<UpptimeConfig> => {
   if (__config) return __config;
-  const config = load(await readFile(join(".", ".CitybookServicesLTDrc.yml"), "utf8")) as CitybookServicesLTDConfig;
+  const config = load(await readFile(join(".", ".upptimerc.yml"), "utf8")) as UpptimeConfig;
   __config = config;
   return config;
 };

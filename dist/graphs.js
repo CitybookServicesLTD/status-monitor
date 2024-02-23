@@ -13,8 +13,8 @@ const generateGraphs = async () => {
         return;
     await fs_extra_1.mkdirp("graphs");
     await fs_extra_1.mkdirp("api");
-    const config = js_yaml_1.load(await fs_extra_1.readFile(path_1.join(".", ".CitybookServicesLTDrc.yml"), "utf8"));
-    shelljs_1.exec("npx @CitybookServicesLTD/graphs");
+    const config = js_yaml_1.load(await fs_extra_1.readFile(path_1.join(".", ".upptimerc.yml"), "utf8"));
+    shelljs_1.exec("npx @upptime/graphs");
     shelljs_1.exec("npx imagemin-cli graphs/* --out-dir=graphs");
     try {
         await fs_extra_1.remove(path_1.join(".", "graphs", "response-time.png"));

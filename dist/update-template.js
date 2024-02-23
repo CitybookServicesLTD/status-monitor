@@ -22,7 +22,7 @@ const updateTemplate = async () => {
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "summary.yml"));
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "update-template.yml"));
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "updates.yml"));
-    await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "status.yml"));
+    await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "uptime.yml"));
     console.log("Removed legacy .github/workflows");
     // Clone and create workflows from this repo
     await fs_extra_1.ensureDir(path_1.join(".", ".github", "workflows"));
@@ -33,7 +33,7 @@ const updateTemplate = async () => {
     await fs_extra_1.writeFile(path_1.join(".", ".github", "workflows", "summary.yml"), await workflows_1.summaryCiWorkflow());
     await fs_extra_1.writeFile(path_1.join(".", ".github", "workflows", "update-template.yml"), await workflows_1.updateTemplateCiWorkflow());
     await fs_extra_1.writeFile(path_1.join(".", ".github", "workflows", "updates.yml"), await workflows_1.updatesCiWorkflow());
-    await fs_extra_1.writeFile(path_1.join(".", ".github", "workflows", "status.yml"), await workflows_1.statusCiWorkflow());
+    await fs_extra_1.writeFile(path_1.join(".", ".github", "workflows", "uptime.yml"), await workflows_1.uptimeCiWorkflow());
     console.log("Added new .github/workflows");
     // Delete these specific template files
     const delteFiles = ["README.pt-br.md", ".templaterc.json"];
@@ -79,7 +79,7 @@ const updateTemplate = async () => {
     catch (error) {
         console.log(error);
     }
-    git_1.commit(`:arrow_up: Update @CitybookServicesLTD to ${await workflows_1.getstatusMonitorVersion()}`);
+    git_1.commit(`:arrow_up: Update @upptime to ${await workflows_1.getUptimeMonitorVersion()}`);
     git_1.push();
     console.log("All done!");
 };

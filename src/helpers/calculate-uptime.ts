@@ -86,11 +86,11 @@ const getDowntimeSecondsForSite = async (slug: string): Promise<Downtimes> => {
 };
 
 /**
- * Get the status percentage for a website
+ * Get the uptime percentage for a website
  * @returns Percent string, e.g., 94.43%
  * @param slug - Slug of the site
  */
-export const getstatusPercentForSite = async (slug: string): Promise<DownPecentages> => {
+export const getUptimePercentForSite = async (slug: string): Promise<DownPecentages> => {
   const site = load(
     (await readFile(join(".", "history", `${slug}.yml`), "utf8"))
       .split("\n")

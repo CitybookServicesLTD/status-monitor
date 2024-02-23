@@ -39,7 +39,7 @@ const getResponseTimeForSite = async (slug) => {
         !isNaN(Number(item.commit.message.split(" in ")[1].split("ms")[0].trim())))
         /**
          * Parse the commit message
-         * @example "🟥 Broken Site is down (500 in 321 ms) [skip ci] [CitybookServicesLTD]"
+         * @example "🟥 Broken Site is down (500 in 321 ms) [skip ci] [upptime]"
          * @returns [Date, 321] where Date is the commit date
          */
         .map((item) => [

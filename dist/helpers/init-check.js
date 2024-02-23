@@ -13,14 +13,14 @@ const shouldContinue = async () => {
     if (`${owner}/${repo}` === "CitybookServicesLTD/status")
         return true;
     try {
-        const CitybookServicesLTDDefaultConfig = await axios_1.default.get("https://raw.githubusercontent.com/CitybookServicesLTD/status/HEAD/.CitybookServicesLTDrc.yml");
-        const thisRepoConfig = await fs_extra_1.readFile(path_1.join(".", ".CitybookServicesLTDrc.yml"), "utf8");
-        if (CitybookServicesLTDDefaultConfig.data.trim() === thisRepoConfig.trim()) {
+        const upptimeDefaultConfig = await axios_1.default.get("https://raw.githubusercontent.com/CitybookServicesLTD/status/HEAD/.upptimerc.yml");
+        const thisRepoConfig = await fs_extra_1.readFile(path_1.join(".", ".upptimerc.yml"), "utf8");
+        if (upptimeDefaultConfig.data.trim() === thisRepoConfig.trim()) {
             console.log(`
 
-[warn] > CitybookServicesLTD WARNING
-[warn] > You should change your CitybookServicesLTD configuration (.CitybookServicesLTDrc.yml)
-[warn] > CitybookServicesLTD workflows will NOT work until you've added custom configuration
+[warn] > UPPTIME WARNING
+[warn] > You should change your Upptime configuration (.upptimerc.yml)
+[warn] > Upptime workflows will NOT work until you've added custom configuration
 
 `);
             return false;

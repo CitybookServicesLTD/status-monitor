@@ -15,14 +15,14 @@ const createAutomatedIssue = async () => {
         auth: secrets_1.getSecret("AUTOMATION_TOKEN"),
     });
     const searchResults = await octokit.search.repos({
-        q: "topic:CitybookServicesLTD",
+        q: "topic:upptime",
         per_page: 100,
     });
     const numberOfPages = Math.floor(searchResults.data.total_count / 100);
     const body = await fs_extra_1.readFile(path_1.join(".", "src", "issue-template.md"), "utf8");
     for await (const page of Array.from(Array(numberOfPages)).map((_, i) => i + 1)) {
         const results = await octokit.search.repos({
-            q: "topic:CitybookServicesLTD",
+            q: "topic:upptime",
             per_page: 100,
             page,
         });
@@ -32,14 +32,14 @@ const createAutomatedIssue = async () => {
             if (`${owner}/${repo}` !== "wakatime/statuspage") {
                 let hasDisabledAutomatedIssues = false;
                 try {
-                    const { data } = await axios_1.default.get(`https://raw.githubusercontent.com/${owner}/${repo}/master/.CitybookServicesLTDrc.yml`);
+                    const { data } = await axios_1.default.get(`https://raw.githubusercontent.com/${owner}/${repo}/master/.upptimerc.yml`);
                     if (data.includes("hasDisabledAutomatedIssues"))
                         hasDisabledAutomatedIssues = true;
                 }
                 catch (error) { }
                 try {
                     if (!hasDisabledAutomatedIssues) {
-                        const { data } = await axios_1.default.get(`https://raw.githubusercontent.com/${owner}/${repo}/HEAD/.CitybookServicesLTDrc.yml`);
+                        const { data } = await axios_1.default.get(`https://raw.githubusercontent.com/${owner}/${repo}/HEAD/.upptimerc.yml`);
                         if (data.includes("hasDisabledAutomatedIssues"))
                             hasDisabledAutomatedIssues = true;
                     }
@@ -51,7 +51,7 @@ const createAutomatedIssue = async () => {
                         repo,
                         title: "⚠️ Add `workflow` scope to your personal access token",
                         body: body.replace("{{TEAM}}", owner),
-                        labels: ["bug", "CitybookServicesLTD-automated"],
+                        labels: ["bug", "upptime-automated"],
                     });
                     console.log("Created an issue in", owner, repo);
                 }

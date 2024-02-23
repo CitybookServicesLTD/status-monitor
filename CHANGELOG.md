@@ -314,21 +314,21 @@
 
 - [`ce33389`](https://github.com/CitybookServicesLTD/status-monitor/commit/ce33389)  Bump actions/cache from v2 to v2.1.4
 - [`6d32ea1`](https://github.com/CitybookServicesLTD/status-monitor/commit/6d32ea1)  Bump @types/prettier from 2.1.6 to 2.2.0
-- [`97ff031`](https://github.com/CitybookServicesLTD/status-monitor/commit/97ff031)  Bump @CitybookServicesLTD/status-page from 1.11.4 to 1.11.5
+- [`97ff031`](https://github.com/CitybookServicesLTD/status-monitor/commit/97ff031)  Bump @upptime/status-page from 1.11.4 to 1.11.5
 - [`9a21416`](https://github.com/CitybookServicesLTD/status-monitor/commit/9a21416)  Bump semantic-release from 17.3.7 to 17.3.8
 - [`06c023e`](https://github.com/CitybookServicesLTD/status-monitor/commit/06c023e)  Bump typescript from 4.1.3 to 4.1.4
 - [`3e2983d`](https://github.com/CitybookServicesLTD/status-monitor/commit/3e2983d)  Bump ts-jest from 26.5.0 to 26.5.1
 - [`b123be8`](https://github.com/CitybookServicesLTD/status-monitor/commit/b123be8)  Bump typescript from 4.1.4 to 4.1.5
 - [`c0cd7a0`](https://github.com/CitybookServicesLTD/status-monitor/commit/c0cd7a0)  Bump nodemailer from 6.4.17 to 6.4.18
 - [`7459431`](https://github.com/CitybookServicesLTD/status-monitor/commit/7459431)  Bump @types/fs-extra from 9.0.6 to 9.0.7
-- [`cf0a1b7`](https://github.com/CitybookServicesLTD/status-monitor/commit/cf0a1b7)  Bump @CitybookServicesLTD/status-page from 1.11.5 to 1.11.6
+- [`cf0a1b7`](https://github.com/CitybookServicesLTD/status-monitor/commit/cf0a1b7)  Bump @upptime/status-page from 1.11.5 to 1.11.6
 - [`8ae3e69`](https://github.com/CitybookServicesLTD/status-monitor/commit/8ae3e69)  Bump @types/prettier from 2.2.0 to 2.2.1
 - [`f9803c3`](https://github.com/CitybookServicesLTD/status-monitor/commit/f9803c3)  Bump semantic-release from 17.3.8 to 17.3.9
 - [`e9c4f12`](https://github.com/CitybookServicesLTD/status-monitor/commit/e9c4f12)  Bump pascalgn/automerge-action from v0.13.0 to v0.13.1
 - [`dbb4abb`](https://github.com/CitybookServicesLTD/status-monitor/commit/dbb4abb)  Bump vsoch/pull-request-action from 1.0.13 to 1.0.14
 - [`2ee21d0`](https://github.com/CitybookServicesLTD/status-monitor/commit/2ee21d0)  Bump vsoch/pull-request-action from 1.0.14 to 1.0.15
 - [`d90a99a`](https://github.com/CitybookServicesLTD/status-monitor/commit/d90a99a)  Bump stefanzweifel/git-auto-commit-action
-- [`70ce41a`](https://github.com/CitybookServicesLTD/status-monitor/commit/70ce41a)  Bump @CitybookServicesLTD/status-page from 1.11.6 to 1.11.7
+- [`70ce41a`](https://github.com/CitybookServicesLTD/status-monitor/commit/70ce41a)  Bump @upptime/status-page from 1.11.6 to 1.11.7
 - [`8f42d95`](https://github.com/CitybookServicesLTD/status-monitor/commit/8f42d95)  Bump actions/setup-node from v2.1.4 to v2.1.5
 - [`1e4e4d4`](https://github.com/CitybookServicesLTD/status-monitor/commit/1e4e4d4)  Bump typescript from 4.1.5 to 4.2.2
 - [`fc7848b`](https://github.com/CitybookServicesLTD/status-monitor/commit/fc7848b)  Bump ts-jest from 26.5.1 to 26.5.2
@@ -345,10 +345,10 @@
 ### ⬆️ Dependency updates
 
 - [`5abb741`](https://github.com/CitybookServicesLTD/status-monitor/commit/5abb741)  Update dependencies
-- [`407e578`](https://github.com/CitybookServicesLTD/status-monitor/commit/407e578)  Bump @CitybookServicesLTD/status-page from 1.10.0 to 1.11.2
-- [`29c9ca5`](https://github.com/CitybookServicesLTD/status-monitor/commit/29c9ca5)  Bump @CitybookServicesLTD/status-page from 1.11.2 to 1.11.3
+- [`407e578`](https://github.com/CitybookServicesLTD/status-monitor/commit/407e578)  Bump @upptime/status-page from 1.10.0 to 1.11.2
+- [`29c9ca5`](https://github.com/CitybookServicesLTD/status-monitor/commit/29c9ca5)  Bump @upptime/status-page from 1.11.2 to 1.11.3
 - [`53fd504`](https://github.com/CitybookServicesLTD/status-monitor/commit/53fd504)  Bump ts-jest from 26.4.4 to 26.5.0
-- [`3800088`](https://github.com/CitybookServicesLTD/status-monitor/commit/3800088)  Bump @CitybookServicesLTD/status-page from 1.11.3 to 1.11.4
+- [`3800088`](https://github.com/CitybookServicesLTD/status-monitor/commit/3800088)  Bump @upptime/status-page from 1.11.3 to 1.11.4
 
 ## v1.24.3 (2021-01-24)
 
@@ -357,14 +357,14 @@
 ### ⬆️ Dependency updates
 
 - [`7b31b34`](https://github.com/CitybookServicesLTD/status-monitor/commit/7b31b34)  Bump dayjs from 1.10.1 to 1.10.2
-- [`27da57e`](https://github.com/CitybookServicesLTD/status-monitor/commit/27da57e)  Bump @CitybookServicesLTD/status-page from 1.7.7 to 1.7.8
+- [`27da57e`](https://github.com/CitybookServicesLTD/status-monitor/commit/27da57e)  Bump @upptime/status-page from 1.7.7 to 1.7.8
 - [`56dc712`](https://github.com/CitybookServicesLTD/status-monitor/commit/56dc712)  Bump @types/js-yaml from 3.12.5 to 4.0.0
 - [`cd3192c`](https://github.com/CitybookServicesLTD/status-monitor/commit/cd3192c)  Bump @types/jest from 26.0.19 to 26.0.20
-- [`0270ecb`](https://github.com/CitybookServicesLTD/status-monitor/commit/0270ecb)  Bump @CitybookServicesLTD/status-page from 1.7.8 to 1.7.9
+- [`0270ecb`](https://github.com/CitybookServicesLTD/status-monitor/commit/0270ecb)  Bump @upptime/status-page from 1.7.8 to 1.7.9
 - [`51bac42`](https://github.com/CitybookServicesLTD/status-monitor/commit/51bac42)  Bump dayjs from 1.10.2 to 1.10.3
-- [`c83d04e`](https://github.com/CitybookServicesLTD/status-monitor/commit/c83d04e)  Bump @CitybookServicesLTD/status-page from 1.7.9 to 1.7.10
+- [`c83d04e`](https://github.com/CitybookServicesLTD/status-monitor/commit/c83d04e)  Bump @upptime/status-page from 1.7.9 to 1.7.10
 - [`3f01303`](https://github.com/CitybookServicesLTD/status-monitor/commit/3f01303)  Bump semantic-release from 17.3.1 to 17.3.2
-- [`18e743a`](https://github.com/CitybookServicesLTD/status-monitor/commit/18e743a)  Bump @CitybookServicesLTD/status-page from 1.7.10 to 1.7.11
+- [`18e743a`](https://github.com/CitybookServicesLTD/status-monitor/commit/18e743a)  Bump @upptime/status-page from 1.7.10 to 1.7.11
 - [`889876b`](https://github.com/CitybookServicesLTD/status-monitor/commit/889876b)  Bump semantic-release from 17.3.2 to 17.3.3
 - [`4ca5f11`](https://github.com/CitybookServicesLTD/status-monitor/commit/4ca5f11)  Bump fs-extra from 9.0.1 to 9.1.0
 - [`d6e0c63`](https://github.com/CitybookServicesLTD/status-monitor/commit/d6e0c63)  Bump semantic-release from 17.3.3 to 17.3.4
@@ -389,7 +389,7 @@
 ### ⬆️ Dependency updates
 
 - [`1fa7f75`](https://github.com/CitybookServicesLTD/status-monitor/commit/1fa7f75)  Bump js-yaml from 3.14.1 to 4.0.0
-- [`9789b7f`](https://github.com/CitybookServicesLTD/status-monitor/commit/9789b7f)  Bump @CitybookServicesLTD/status-page from 1.7.6 to 1.7.7
+- [`9789b7f`](https://github.com/CitybookServicesLTD/status-monitor/commit/9789b7f)  Bump @upptime/status-page from 1.7.6 to 1.7.7
 - [`ea65d1c`](https://github.com/CitybookServicesLTD/status-monitor/commit/ea65d1c)  Bump dayjs from 1.9.8 to 1.10.1
 
 ## v1.24.0 (2021-01-02)
@@ -411,7 +411,7 @@
 ### ⬆️ Dependency updates
 
 - [`2ff5382`](https://github.com/CitybookServicesLTD/status-monitor/commit/2ff5382)  Bump dayjs from 1.9.7 to 1.9.8
-- [`24125ca`](https://github.com/CitybookServicesLTD/status-monitor/commit/24125ca)  Bump @CitybookServicesLTD/status-page from 1.7.5 to 1.7.6
+- [`24125ca`](https://github.com/CitybookServicesLTD/status-monitor/commit/24125ca)  Bump @upptime/status-page from 1.7.5 to 1.7.6
 - [`6935563`](https://github.com/CitybookServicesLTD/status-monitor/commit/6935563)  Bump semantic-release from 17.3.0 to 17.3.1
 
 ## v1.23.13 (2020-12-28)
@@ -421,7 +421,7 @@
 ### ⬆️ Dependency updates
 
 - [`08e80c8`](https://github.com/CitybookServicesLTD/status-monitor/commit/08e80c8)  Bump vsoch/pull-request-action from 1.0.12 to 1.0.13
-- [`590f419`](https://github.com/CitybookServicesLTD/status-monitor/commit/590f419)  Bump @CitybookServicesLTD/status-page from 1.7.4 to 1.7.5
+- [`590f419`](https://github.com/CitybookServicesLTD/status-monitor/commit/590f419)  Bump @upptime/status-page from 1.7.4 to 1.7.5
 - [`83dec99`](https://github.com/CitybookServicesLTD/status-monitor/commit/83dec99)  Bump axios from 0.21.0 to 0.21.1
 - [`afb418f`](https://github.com/CitybookServicesLTD/status-monitor/commit/afb418f)  Bump pascalgn/automerge-action from v0.12.0 to v0.13.0
 - [`a14ab00`](https://github.com/CitybookServicesLTD/status-monitor/commit/a14ab00)  Bump node-notifier from 8.0.0 to 8.0.1
@@ -470,16 +470,16 @@
 ### ⬆️ Dependency updates
 
 - [`1e7a1ba`](https://github.com/CitybookServicesLTD/status-monitor/commit/1e7a1ba)  Bump dayjs from 1.9.6 to 1.9.7
-- [`bcd258c`](https://github.com/CitybookServicesLTD/status-monitor/commit/bcd258c)  Bump @CitybookServicesLTD/status-page from 1.5.7 to 1.7.1
+- [`bcd258c`](https://github.com/CitybookServicesLTD/status-monitor/commit/bcd258c)  Bump @upptime/status-page from 1.5.7 to 1.7.1
 - [`7f3eacd`](https://github.com/CitybookServicesLTD/status-monitor/commit/7f3eacd)  Bump js-yaml from 3.14.0 to 3.14.1
 - [`e38f211`](https://github.com/CitybookServicesLTD/status-monitor/commit/e38f211)  Bump @types/jest from 26.0.16 to 26.0.17
-- [`53a812f`](https://github.com/CitybookServicesLTD/status-monitor/commit/53a812f)  Bump @CitybookServicesLTD/status-page from 1.7.1 to 1.7.2
+- [`53a812f`](https://github.com/CitybookServicesLTD/status-monitor/commit/53a812f)  Bump @upptime/status-page from 1.7.1 to 1.7.2
 - [`447bc66`](https://github.com/CitybookServicesLTD/status-monitor/commit/447bc66)  Bump @types/jest from 26.0.17 to 26.0.18
-- [`89dd5de`](https://github.com/CitybookServicesLTD/status-monitor/commit/89dd5de)  Bump @CitybookServicesLTD/status-page from 1.7.2 to 1.7.3
+- [`89dd5de`](https://github.com/CitybookServicesLTD/status-monitor/commit/89dd5de)  Bump @upptime/status-page from 1.7.2 to 1.7.3
 - [`6c54827`](https://github.com/CitybookServicesLTD/status-monitor/commit/6c54827)  Bump @types/fs-extra from 9.0.4 to 9.0.5
 - [`d877449`](https://github.com/CitybookServicesLTD/status-monitor/commit/d877449)  Bump actions/setup-node from v2.1.2 to v2.1.3
 - [`d37984c`](https://github.com/CitybookServicesLTD/status-monitor/commit/d37984c)  Bump @types/jest from 26.0.18 to 26.0.19
-- [`76a0894`](https://github.com/CitybookServicesLTD/status-monitor/commit/76a0894)  Bump @CitybookServicesLTD/status-page from 1.7.3 to 1.7.4
+- [`76a0894`](https://github.com/CitybookServicesLTD/status-monitor/commit/76a0894)  Bump @upptime/status-page from 1.7.3 to 1.7.4
 - [`8274620`](https://github.com/CitybookServicesLTD/status-monitor/commit/8274620)  Bump nodemailer from 6.4.16 to 6.4.17
 - [`3c3ab55`](https://github.com/CitybookServicesLTD/status-monitor/commit/3c3ab55)  Bump typescript from 4.1.2 to 4.1.3
 - [`563a7e9`](https://github.com/CitybookServicesLTD/status-monitor/commit/563a7e9)  Bump stefanzweifel/git-auto-commit-action
@@ -575,7 +575,7 @@
 
 ### 🐛 Bug fixes
 
-- [`f441af0`](https://github.com/CitybookServicesLTD/status-monitor/commit/f441af0)  Fix status/response time 1 year badge
+- [`f441af0`](https://github.com/CitybookServicesLTD/status-monitor/commit/f441af0)  Fix uptime/response time 1 year badge
 
 ### ⬆️ Dependency updates
 
@@ -597,7 +597,7 @@
 
 ### ♻️ Updates
 
-- [`dc71222`](https://github.com/CitybookServicesLTD/status-monitor/commit/dc71222)  Add details to status summary
+- [`dc71222`](https://github.com/CitybookServicesLTD/status-monitor/commit/dc71222)  Add details to uptime summary
 
 ## [v1.22.7](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.22.6...v1.22.7) (2020-12-02)
 
@@ -627,7 +627,7 @@
 
 ### ♻️ Updates
 
-- [`436fdf7`](https://github.com/CitybookServicesLTD/status-monitor/commit/436fdf7)  Use total seconds for max status
+- [`436fdf7`](https://github.com/CitybookServicesLTD/status-monitor/commit/436fdf7)  Use total seconds for max uptime
 
 ## [v1.22.2](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.22.1...v1.22.2) (2020-12-02)
 
@@ -639,11 +639,11 @@
 
 ### ♻️ Updates
 
-- [`24ee219`](https://github.com/CitybookServicesLTD/status-monitor/commit/24ee219)  Get status percent for day, month, week, year
+- [`24ee219`](https://github.com/CitybookServicesLTD/status-monitor/commit/24ee219)  Get uptime percent for day, month, week, year
 
 ### ⬆️ Dependency updates
 
-- [`248e8a5`](https://github.com/CitybookServicesLTD/status-monitor/commit/248e8a5)  Bump @CitybookServicesLTD/status-page from 1.5.6 to 1.5.7
+- [`248e8a5`](https://github.com/CitybookServicesLTD/status-monitor/commit/248e8a5)  Bump @upptime/status-page from 1.5.6 to 1.5.7
 - [`77f3838`](https://github.com/CitybookServicesLTD/status-monitor/commit/77f3838)  Bump @types/jest from 26.0.15 to 26.0.16
 
 ## [v1.22.0](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.21.0...v1.22.0) (2020-12-02)
@@ -660,7 +660,7 @@
 
 ### ⬆️ Dependency updates
 
-- [`9f363b2`](https://github.com/CitybookServicesLTD/status-monitor/commit/9f363b2)  Bump @CitybookServicesLTD/status-page from 1.5.5 to 1.5.6
+- [`9f363b2`](https://github.com/CitybookServicesLTD/status-monitor/commit/9f363b2)  Bump @upptime/status-page from 1.5.5 to 1.5.6
 
 ## [v1.21.0](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.20.6...v1.21.0) (2020-12-01)
 
@@ -671,7 +671,7 @@
 
 ### ⬆️ Dependency updates
 
-- [`708561f`](https://github.com/CitybookServicesLTD/status-monitor/commit/708561f)  Bump @CitybookServicesLTD/status-page from 1.5.4 to 1.5.5
+- [`708561f`](https://github.com/CitybookServicesLTD/status-monitor/commit/708561f)  Bump @upptime/status-page from 1.5.4 to 1.5.5
 - [`913ea86`](https://github.com/CitybookServicesLTD/status-monitor/commit/913ea86)  Bump prettier from 2.2.0 to 2.2.1
 
 ## [v1.20.6](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.20.5...v1.20.6) (2020-11-30)
@@ -756,7 +756,7 @@
 
 ### 🐛 Bug fixes
 
-- [`9298ed3`](https://github.com/CitybookServicesLTD/status-monitor/commit/9298ed3)  Fix __status -&gt; __CitybookServicesLTD
+- [`9298ed3`](https://github.com/CitybookServicesLTD/status-monitor/commit/9298ed3)  Fix __uptime -&gt; __upptime
 
 ## [v1.18.0](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.17.5...v1.18.0) (2020-11-28)
 
@@ -766,7 +766,7 @@
 
 ### ⬆️ Dependency updates
 
-- [`325e40d`](https://github.com/CitybookServicesLTD/status-monitor/commit/325e40d)  Bump @CitybookServicesLTD/status-page from 1.5.3 to 1.5.4
+- [`325e40d`](https://github.com/CitybookServicesLTD/status-monitor/commit/325e40d)  Bump @upptime/status-page from 1.5.3 to 1.5.4
 
 ## [v1.17.5](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.17.4...v1.17.5) (2020-11-25)
 
@@ -776,7 +776,7 @@
 
 ### ⬆️ Dependency updates
 
-- [`82bc348`](https://github.com/CitybookServicesLTD/status-monitor/commit/82bc348)  Bump @CitybookServicesLTD/status-page from 1.5.2 to 1.5.3
+- [`82bc348`](https://github.com/CitybookServicesLTD/status-monitor/commit/82bc348)  Bump @upptime/status-page from 1.5.2 to 1.5.3
 
 ## [v1.17.4](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.17.3...v1.17.4) (2020-11-24)
 
@@ -830,7 +830,7 @@
 
 ### ⬆️ Dependency updates
 
-- [`dc8f119`](https://github.com/CitybookServicesLTD/status-monitor/commit/dc8f119)  Bump @CitybookServicesLTD/status-page from 1.5.1 to 1.5.2
+- [`dc8f119`](https://github.com/CitybookServicesLTD/status-monitor/commit/dc8f119)  Bump @upptime/status-page from 1.5.1 to 1.5.2
 - [`8293c4c`](https://github.com/CitybookServicesLTD/status-monitor/commit/8293c4c)  Bump semantic-release from 17.2.4 to 17.3.0
 
 ## [v1.15.2](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.15.1...v1.15.2) (2020-11-22)
@@ -861,7 +861,7 @@
 
 ### 🐛 Bug fixes
 
-- [`fd02605`](https://github.com/CitybookServicesLTD/status-monitor/commit/fd02605)  Minimum status has to be +0
+- [`fd02605`](https://github.com/CitybookServicesLTD/status-monitor/commit/fd02605)  Minimum uptime has to be +0
 
 ## [v1.14.5](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.14.4...v1.14.5) (2020-11-22)
 
@@ -885,7 +885,7 @@
 
 ### ♻️ Updates
 
-- [`45e0612`](https://github.com/CitybookServicesLTD/status-monitor/commit/45e0612)  Add helpers for status, config, octokit
+- [`45e0612`](https://github.com/CitybookServicesLTD/status-monitor/commit/45e0612)  Add helpers for uptime, config, octokit
 - [`02b4a67`](https://github.com/CitybookServicesLTD/status-monitor/commit/02b4a67)  Add comments, use helpers in summary
 - [`22fec40`](https://github.com/CitybookServicesLTD/status-monitor/commit/22fec40)  Use valid YAML for status history
 
@@ -935,7 +935,7 @@
 
 - [`83e4b4d`](https://github.com/CitybookServicesLTD/status-monitor/commit/83e4b4d)  Bump vsoch/pull-request-action from 1.0.11 to 1.0.12
 - [`c5f3a2c`](https://github.com/CitybookServicesLTD/status-monitor/commit/c5f3a2c)  Bump @koj/config from 1.2.8 to 1.2.9
-- [`7a9ef13`](https://github.com/CitybookServicesLTD/status-monitor/commit/7a9ef13)  Bump @CitybookServicesLTD/status-page from 1.4.1 to 1.5.1
+- [`7a9ef13`](https://github.com/CitybookServicesLTD/status-monitor/commit/7a9ef13)  Bump @upptime/status-page from 1.4.1 to 1.5.1
 
 ## [v1.12.2](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.12.1...v1.12.2) (2020-11-17)
 
@@ -943,7 +943,7 @@
 
 ### ⬆️ Dependency updates
 
-- [`9e6c6c6`](https://github.com/CitybookServicesLTD/status-monitor/commit/9e6c6c6)  Bump @CitybookServicesLTD/status-page from 1.3.1 to 1.4.1
+- [`9e6c6c6`](https://github.com/CitybookServicesLTD/status-monitor/commit/9e6c6c6)  Bump @upptime/status-page from 1.3.1 to 1.4.1
 - [`bc366c1`](https://github.com/CitybookServicesLTD/status-monitor/commit/bc366c1)  Bump semantic-release from 17.2.2 to 17.2.3
 - [`d60ca97`](https://github.com/CitybookServicesLTD/status-monitor/commit/d60ca97)  Update koj-co/github-actions-starter
 
@@ -996,7 +996,7 @@
 
 ### ♻️ Updates
 
-- [`1dfaa28`](https://github.com/CitybookServicesLTD/status-monitor/commit/1dfaa28)  Link to status history in README
+- [`1dfaa28`](https://github.com/CitybookServicesLTD/status-monitor/commit/1dfaa28)  Link to uptime history in README
 - [`8046351`](https://github.com/CitybookServicesLTD/status-monitor/commit/8046351)  Inject manual editing note to README
 
 ## [v1.10.8](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.10.7...v1.10.8) (2020-11-06)
@@ -1006,7 +1006,7 @@
 ### ♻️ Updates
 
 - [`9882f48`](https://github.com/CitybookServicesLTD/status-monitor/commit/9882f48)  Use owner/repo from GitHub env
-- [`c802d6f`](https://github.com/CitybookServicesLTD/status-monitor/commit/c802d6f)  Always add &quot;CitybookServicesLTD&quot; label if not there
+- [`c802d6f`](https://github.com/CitybookServicesLTD/status-monitor/commit/c802d6f)  Always add &quot;upptime&quot; label if not there
 - [`aa5d6cf`](https://github.com/CitybookServicesLTD/status-monitor/commit/aa5d6cf)  Format README with Prettier
 
 ### ⬆️ Dependency updates
@@ -1019,7 +1019,7 @@
 
 ### ♻️ Updates
 
-- [`dc6a6e5`](https://github.com/CitybookServicesLTD/status-monitor/commit/dc6a6e5)  Change CitybookServicesLTD@koj.co -&gt; forwarder email
+- [`dc6a6e5`](https://github.com/CitybookServicesLTD/status-monitor/commit/dc6a6e5)  Change upptime@koj.co -&gt; forwarder email
 (Issues: [`CitybookServicesLTD/status#49`](https://github.com/CitybookServicesLTD/status/issues/49))
 
 ### ⬆️ Dependency updates
@@ -1081,7 +1081,7 @@
 
 ### 🐛 Bug fixes
 
-- [`ec06969`](https://github.com/CitybookServicesLTD/status-monitor/commit/ec06969)  Change uppload -&gt; CitybookServicesLTD in owner check
+- [`ec06969`](https://github.com/CitybookServicesLTD/status-monitor/commit/ec06969)  Change uppload -&gt; upptime in owner check
 
 ## [v1.9.0](https://github.com/CitybookServicesLTD/status-monitor/compare/v1.8.0...v1.9.0) (2020-10-30)
 
@@ -1095,7 +1095,7 @@
 
 ### ⬆️ Dependency updates
 
-- [`0f46e58`](https://github.com/CitybookServicesLTD/status-monitor/commit/0f46e58)  Bump @CitybookServicesLTD/status-page from 1.3.0 to 1.3.1
+- [`0f46e58`](https://github.com/CitybookServicesLTD/status-monitor/commit/0f46e58)  Bump @upptime/status-page from 1.3.0 to 1.3.1
 - [`326822d`](https://github.com/CitybookServicesLTD/status-monitor/commit/326822d)  Bump @koj/config from 1.2.6 to 1.2.7
 - [`7a25aa7`](https://github.com/CitybookServicesLTD/status-monitor/commit/7a25aa7)  Bump semantic-release from 17.2.1 to 17.2.2
 

@@ -1,5 +1,5 @@
 name: "CitybookServicesLTD"
-description: "status monitor and status page powered entirely by GitHub"
+description: "Uptime monitor and status page powered entirely by GitHub"
 author: "Anand Chowdhary <https://github.com/AnandChowdhary>"
 inputs:
   command:

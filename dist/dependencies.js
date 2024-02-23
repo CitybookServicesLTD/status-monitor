@@ -23,7 +23,7 @@ const updateDependencies = async () => {
             .split("\n")
             .filter((line) => line.includes("uses:"))
             .map((line) => line.split("uses:")[1].trim())
-            .filter((pkg) => pkg.startsWith("CitybookServicesLTD/"))
+            .filter((pkg) => pkg.startsWith("upptime/"))
             .forEach((pkg) => (uses[pkg] = pkg));
     }
     for await (const pkgOldVersion of Object.keys(uses)) {

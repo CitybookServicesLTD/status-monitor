@@ -12,8 +12,8 @@ import {
   summaryCiWorkflow,
   updatesCiWorkflow,
   updateTemplateCiWorkflow,
-  statusCiWorkflow,
-  getstatusMonitorVersion,
+  uptimeCiWorkflow,
+  getUptimeMonitorVersion,
 } from "./helpers/workflows";
 
 export const updateTemplate = async () => {
@@ -28,7 +28,7 @@ export const updateTemplate = async () => {
   await remove(join(".", ".github", "workflows", "summary.yml"));
   await remove(join(".", ".github", "workflows", "update-template.yml"));
   await remove(join(".", ".github", "workflows", "updates.yml"));
-  await remove(join(".", ".github", "workflows", "status.yml"));
+  await remove(join(".", ".github", "workflows", "uptime.yml"));
   console.log("Removed legacy .github/workflows");
 
   // Clone and create workflows from this repo
@@ -46,7 +46,7 @@ export const updateTemplate = async () => {
     await updateTemplateCiWorkflow()
   );
   await writeFile(join(".", ".github", "workflows", "updates.yml"), await updatesCiWorkflow());
-  await writeFile(join(".", ".github", "workflows", "status.yml"), await statusCiWorkflow());
+  await writeFile(join(".", ".github", "workflows", "uptime.yml"), await uptimeCiWorkflow());
   console.log("Added new .github/workflows");
 
   // Delete these specific template files
@@ -93,7 +93,7 @@ export const updateTemplate = async () => {
     console.log(error);
   }
 
-  commit(`:arrow_up: Update @CitybookServicesLTD to ${await getstatusMonitorVersion()}`);
+  commit(`:arrow_up: Update @upptime to ${await getUptimeMonitorVersion()}`);
   push();
   console.log("All done!");
 };
