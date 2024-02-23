@@ -1,4 +1,4 @@
-export interface UpptimeConfig {
+export interface CitybookServicesLTDConfig {
     owner: string;
     repo: string;
     "user-agent"?: string;
@@ -79,11 +79,11 @@ export interface UpptimeConfig {
         responseTimeWeek?: string;
         responseTimeMonth?: string;
         responseTimeYear?: string;
-        uptime?: string;
-        uptimeDay?: string;
-        uptimeWeek?: string;
-        uptimeMonth?: string;
-        uptimeYear?: string;
+        status?: string;
+        statusDay?: string;
+        statusWeek?: string;
+        statusMonth?: string;
+        statusYear?: string;
         responseTimeGraphAlt?: string;
         liveStatus?: string;
         allSystemsOperational?: string;
@@ -98,7 +98,7 @@ export interface UpptimeConfig {
         summary?: string;
         updateTemplate?: string;
         updates?: string;
-        uptime?: string;
+        status?: string;
     };
     runner?: string;
     customStatusWebsitePackage?: string;
@@ -111,7 +111,7 @@ export interface SiteHistory {
     responseTime: number;
     lastUpdated?: string;
     startTime?: string;
-    generator: "Upptime <https://github.com/CitybookServicesLTD/status>";
+    generator: "CitybookServicesLTD <https://github.com/CitybookServicesLTD/status>";
 }
 export interface SiteStatus {
     /** Name of site */
@@ -130,12 +130,12 @@ export interface SiteStatus {
     timeWeek: number;
     timeMonth: number;
     timeYear: number;
-    /** Total uptime percentage */
-    uptime: string;
-    uptimeDay: string;
-    uptimeWeek: string;
-    uptimeMonth: string;
-    uptimeYear: string;
+    /** Total status percentage */
+    status: string;
+    statusDay: string;
+    statusWeek: string;
+    statusMonth: string;
+    statusYear: string;
     /** Summary for downtimes */
     dailyMinutesDown: Record<string, number>;
 }

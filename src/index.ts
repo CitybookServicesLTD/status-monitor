@@ -2,7 +2,7 @@ import { debug, getInput, setFailed } from "@actions/core";
 import { updateDependencies } from "./dependencies";
 import { generateGraphs } from "./graphs";
 import { getSecret } from "./helpers/secrets";
-import { getUptimeMonitorVersion } from "./helpers/workflows";
+import { getstatusMonitorVersion } from "./helpers/workflows";
 import { generateSite } from "./site";
 import { generateSummary } from "./summary";
 import { update } from "./update";
@@ -20,11 +20,11 @@ export const run = async () => {
 
   console.log(`
 
-🔼 Upptime @${await getUptimeMonitorVersion()}
-GitHub-powered open-source uptime monitor and status page by Anand Chowdhary
+🔼 CitybookServicesLTD @${await getstatusMonitorVersion()}
+GitHub-powered open-source status monitor and status page by Anand Chowdhary
 
 * Source: https://github.com/CitybookServicesLTD/status
-* Docs and more: https://upptime.js.org
+* Docs and more: https://CitybookServicesLTD.js.org
 * More by Anand Chowdhary: https://anandchowdhary.com
 `);
 

@@ -1,9 +1,9 @@
 import { Curl, CurlFeature } from "node-libcurl";
-import { UpptimeConfig } from "../interfaces";
+import { CitybookServicesLTDConfig } from "../interfaces";
 import { replaceEnvironmentVariables } from "./environment";
 
 export const curl = (
-  site: UpptimeConfig["sites"][0]
+  site: CitybookServicesLTDConfig["sites"][0]
 ): Promise<{ httpCode: number; totalTime: number; data: string }> =>
   new Promise((resolve) => {
     const url = replaceEnvironmentVariables(site.url);
@@ -21,7 +21,7 @@ export const curl = (
       curl.setOpt("SSL_VERIFYHOST", false);
     curl.setOpt("FOLLOWLOCATION", maxRedirects ? 1 : 0);
     curl.setOpt("MAXREDIRS", maxRedirects);
-    curl.setOpt("USERAGENT", "upptime.js.org");
+    curl.setOpt("USERAGENT", "CitybookServicesLTD.js.org");
     curl.setOpt("CONNECTTIMEOUT", 10);
     curl.setOpt("TIMEOUT", 30);
     curl.setOpt("HEADER", 1);

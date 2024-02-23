@@ -1,7 +1,7 @@
 {
   "name": "@CitybookServicesLTD/status-monitor",
   "version": "1.36.4",
-  "description": "Uptime monitor powered by GitHub Actions",
+  "description": "status monitor powered by GitHub Actions",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",

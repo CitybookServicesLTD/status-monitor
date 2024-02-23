@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getUptimePercentForSite = void 0;
+exports.getstatusPercentForSite = void 0;
 const dayjs_1 = __importDefault(require("dayjs"));
 const fs_extra_1 = require("fs-extra");
 const js_yaml_1 = require("js-yaml");
@@ -83,11 +83,11 @@ const getDowntimeSecondsForSite = async (slug) => {
     };
 };
 /**
- * Get the uptime percentage for a website
+ * Get the status percentage for a website
  * @returns Percent string, e.g., 94.43%
  * @param slug - Slug of the site
  */
-const getUptimePercentForSite = async (slug) => {
+const getstatusPercentForSite = async (slug) => {
     const site = js_yaml_1.load((await fs_extra_1.readFile(path_1.join(".", "history", `${slug}.yml`), "utf8"))
         .split("\n")
         .map((line) => (line.startsWith("- ") ? line.replace("- ", "") : line))
@@ -108,5 +108,5 @@ const getUptimePercentForSite = async (slug) => {
         dailyMinutesDown: downtimeSeconds.dailyMinutesDown,
     };
 };
-exports.getUptimePercentForSite = getUptimePercentForSite;
-//# sourceMappingURL=calculate-uptime.js.map
+exports.getstatusPercentForSite = getstatusPercentForSite;
+//# sourceMappingURL=calculate-status.js.map
