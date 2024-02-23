@@ -15,6 +15,7 @@ const updateTemplate = async () => {
     const [owner, repo] = secrets_1.getOwnerRepo();
     const config = await config_1.getConfig();
     // Remove our workflows (not all workflows)
+    console.log("uses 'CitybookServicesLTD' status-monitor");
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "graphs.yml"));
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "response-time.yml"));
     await fs_extra_1.remove(path_1.join(".", ".github", "workflows", "setup.yml"));
