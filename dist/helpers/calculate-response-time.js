@@ -31,7 +31,7 @@ const getHistoryItems = async (octokit, owner, repo, slug, page) => {
 const getResponseTimeForSite = async (slug) => {
     const [owner, repo] = secrets_1.getOwnerRepo();
     const octokit = await github_1.getOctokit();
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const data = await getHistoryItems(octokit, owner, repo, slug, 1);
     const responseTimes = data
         .filter((item) => item.commit.message.includes(" in ") &&

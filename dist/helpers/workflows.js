@@ -34,7 +34,7 @@ const introComment = async () => `#
 # * More by Anand Chowdhary: https://anandchowdhary.com
 `;
 const graphsCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const workflowSchedule = config.workflowSchedule || {};
     return `${await introComment()}
 
@@ -65,7 +65,7 @@ jobs:
 };
 exports.graphsCiWorkflow = graphsCiWorkflow;
 const getHasIpV6Site = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const hasIpV6 = !!config.sites.find((site) => site.ipv6);
     if (hasIpV6)
         console.log("Detected IPv6 site, adding WARP setup step");
@@ -74,7 +74,7 @@ const getHasIpV6Site = async () => {
     return hasIpV6;
 };
 const responseTimeCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const workflowSchedule = config.workflowSchedule || {};
     return `${await introComment()}
 
@@ -106,7 +106,7 @@ jobs:
 };
 exports.responseTimeCiWorkflow = responseTimeCiWorkflow;
 const setupCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const commitMessages = config.commitMessages || {};
     const statusWebsite = config["status-website"] || {};
     return `${await introComment()}
@@ -171,7 +171,7 @@ jobs:
 };
 exports.setupCiWorkflow = setupCiWorkflow;
 const siteCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const workflowSchedule = config.workflowSchedule || {};
     const commitMessages = config.commitMessages || {};
     const statusWebsite = config["status-website"] || {};
@@ -213,7 +213,7 @@ jobs:
 };
 exports.siteCiWorkflow = siteCiWorkflow;
 const summaryCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const workflowSchedule = config.workflowSchedule || {};
     return `${await introComment()}
 
@@ -244,7 +244,7 @@ jobs:
 };
 exports.summaryCiWorkflow = summaryCiWorkflow;
 const updateTemplateCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const workflowSchedule = config.workflowSchedule || {};
     return `${await introComment()}
 
@@ -275,7 +275,7 @@ jobs:
 };
 exports.updateTemplateCiWorkflow = updateTemplateCiWorkflow;
 const updatesCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const workflowSchedule = config.workflowSchedule || {};
     return `${await introComment()}
 
@@ -304,7 +304,7 @@ jobs:
 };
 exports.updatesCiWorkflow = updatesCiWorkflow;
 const uptimeCiWorkflow = async () => {
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const workflowSchedule = config.workflowSchedule || {};
     return `${await introComment()}
 

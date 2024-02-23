@@ -49,7 +49,7 @@ const update = async (shouldCommit = false) => {
         return;
     await fs_extra_1.mkdirp("history");
     const [owner, repo] = secrets_1.getOwnerRepo();
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const octokit = await github_1.getOctokit();
     let hasDelta = false;
     const _ongoingMaintenanceEvents = await octokit.issues.listForRepo({

@@ -11,7 +11,7 @@ const updateDependencies = async () => {
     const [owner, repo] = secrets_1.getOwnerRepo();
     if (`${owner}/${repo}` !== "CitybookServicesLTD/status")
         return;
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     const octokit = await github_1.getOctokit();
     let changes = 0;
     await fs_extra_1.ensureDir(path_1.join(".", ".github", "workflows"));

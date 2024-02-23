@@ -11,7 +11,7 @@ const generateSite = async () => {
     if (!(await init_check_1.shouldContinue()))
         return;
     const [owner, repo] = secrets_1.getOwnerRepo();
-    const config = await config_1.getConfig();
+    const config = await config_1.getConfig(); console.log("config", config);
     if (config.skipGeneratingWebsite)
         return;
     const sitePackage = config.customStatusWebsitePackage || "@upptime/status-page";
