@@ -19,7 +19,7 @@ import {
 export const updateTemplate = async () => {
   const [owner, repo] = getOwnerRepo();
   const config = await getConfig();
-
+      console.log("uses 'CitybookServicesLTD' status-monitor");
   // Remove our workflows (not all workflows)
   await remove(join(".", ".github", "workflows", "graphs.yml"));
   await remove(join(".", ".github", "workflows", "response-time.yml"));
