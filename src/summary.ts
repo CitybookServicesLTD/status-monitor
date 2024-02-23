@@ -94,7 +94,7 @@ export const generateSummary = async () => {
 <!-- prettier-ignore -->
 | ${i18n.url || "URL"} | ${i18n.status || "Status"} | ${
       i18n.history || "History"
-    } | ${i18n.responseTime || "Response Time"} | ${i18n.uptime || "Uptime"} |
+    } | ${i18n.responseTime || "Response Time"} | ${i18n.uptime || "CitybookServicesLTD"} |
 | --- | ------ | ------- | ------------- | ------ |
 ${pageStatuses
   .map(
@@ -276,7 +276,7 @@ ${config.summaryEndHtmlComment || "<!--end: status pages-->"}${endText}`;
         });
       console.log("Current topics are", repoInfo.data.topics);
       if (
-        !(repoInfo.data.topics || []).includes("upptime") &&
+        !(repoInfo.data.topics || []).includes("CitybookServicesLTD") &&
         !config.skipTopicsUpdate
       )
         await octokit.repos.replaceAllTopics({
@@ -286,7 +286,7 @@ ${config.summaryEndHtmlComment || "<!--end: status pages-->"}${endText}`;
             ...(repoInfo.data.topics || []),
             "uptime-monitor",
             "status-page",
-            "upptime",
+            "CitybookServicesLTD",
           ].filter((value, index, array) => array.indexOf(value) === index),
         });
       console.log(
@@ -295,7 +295,7 @@ ${config.summaryEndHtmlComment || "<!--end: status pages-->"}${endText}`;
           ...(repoInfo.data.topics || []),
           "uptime-monitor",
           "status-page",
-          "upptime",
+          "CitybookServicesLTD",
         ].filter((value, index, array) => array.indexOf(value) === index)
       );
       console.log(
