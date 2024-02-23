@@ -315,7 +315,7 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Update code
-        uses: upptime/updates@master
+        uses: CitybookServicesLTD/status-updates@master
         env:
           GH_PAT: \${{ secrets.GH_PAT || github.token }}
 `;
