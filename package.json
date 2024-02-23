@@ -1,5 +1,5 @@
 {
-  "name": "@upptime/uptime-monitor",
+  "name": "@CitybookServicesLTD/status-monitor",
   "version": "1.36.4",
   "description": "Uptime monitor powered by GitHub Actions",
   "main": "dist/index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/upptime/uptime-monitor.git"
+    "url": "git+https://github.com/CitybookServicesLTD/status-monitor.git"
   },
   "keywords": [
     "github",
@@ -22,9 +22,9 @@
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/upptime/uptime-monitor/issues"
+    "url": "https://github.com/CitybookServicesLTD/status-monitor/issues"
   },
-  "homepage": "https://github.com/upptime/uptime-monitor#readme",
+  "homepage": "https://github.com/CitybookServicesLTD/status-monitor#readme",
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
     "@types/fs-extra": "^9.0.11",

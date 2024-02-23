@@ -4,8 +4,8 @@ This repository contains Upptime's GitHub Action's source code.
 
 [**To get started, visit CitybookServicesLTD/status →**](https://github.com/CitybookServicesLTD/status)
 
-[![Build CI](https://github.com/upptime/uptime-monitor/workflows/Build%20CI/badge.svg)](https://github.com/upptime/uptime-monitor/actions?query=workflow%3A%22Build+CI%22)
-[![Release CI](https://github.com/upptime/uptime-monitor/workflows/Release%20CI/badge.svg)](https://github.com/upptime/uptime-monitor/actions?query=workflow%3A%22Release+CI%22)
+[![Build CI](https://github.com/CitybookServicesLTD/status-monitor/workflows/Build%20CI/badge.svg)](https://github.com/CitybookServicesLTD/status-monitor/actions?query=workflow%3A%22Build+CI%22)
+[![Release CI](https://github.com/CitybookServicesLTD/status-monitor/workflows/Release%20CI/badge.svg)](https://github.com/CitybookServicesLTD/status-monitor/actions?query=workflow%3A%22Release+CI%22)
 
 ## 🎁 Contributing
 
@@ -22,31 +22,31 @@ When you use Upptime, we automatically add the required workflows. If you want t
 Generate the `README.md` summary file:
 
 ```bash
-npx @upptime/uptime-monitor summary
+npx @CitybookServicesLTD/status-monitor summary
 ```
 
 Make network requests to get the response time and commit them to git history:
 
 ```bash
-npx @upptime/uptime-monitor response-time
+npx @CitybookServicesLTD/status-monitor response-time
 ```
 
 Generate the static status website, powered by [upptime/status-page](https://github.com/upptime/status-page):
 
 ```bash
-npx @upptime/uptime-monitor site
+npx @CitybookServicesLTD/status-monitor site
 ```
 
 Generate response time graphs, powered by [upptime/graphs](https://github.com/upptime/graphs):
 
 ```bash
-npx @upptime/uptime-monitor graphs
+npx @CitybookServicesLTD/status-monitor graphs
 ```
 
 Check uptime, but don't make git commits with network requests:
 
 ```bash
-npx @upptime/uptime-monitor
+npx @CitybookServicesLTD/status-monitor
 ```
 
 ## 📄 License

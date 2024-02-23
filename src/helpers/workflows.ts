@@ -64,7 +64,7 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Generate graphs
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "graphs"
         env:
@@ -105,7 +105,7 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Update response time
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "response-time"
         env:
@@ -140,20 +140,20 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Update template
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "update-template"
         env:
           GH_PAT: \${{ secrets.GH_PAT || github.token }}
       - name: Update response time
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "response-time"
         env:
           GH_PAT: \${{ secrets.GH_PAT || github.token }}
           SECRETS_CONTEXT: \${{ toJson(secrets) }}
       - name: Update summary in README
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "readme"
         env:
@@ -164,7 +164,7 @@ jobs:
           workflow: Graphs CI
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Generate site
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "site"
         env:
@@ -209,7 +209,7 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Generate site
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "site"
         env:
@@ -251,7 +251,7 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Update summary in README
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "readme"
         env:
@@ -283,7 +283,7 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Update template
-        uses: upptime/uptime-monitor@master
+        uses: CitybookServicesLTD/status-monitor@master
         with:
           command: "update-template"
         env:
@@ -345,7 +345,7 @@ jobs:
           ref: \${{ github.head_ref }}
           token: \${{ secrets.GH_PAT || github.token }}
       - name: Check endpoint status
-        uses: upptime/uptime-monitor@${await getUptimeMonitorVersion()}
+        uses: CitybookServicesLTD/status-monitor@${await getUptimeMonitorVersion()}
         with:
           command: "update"
         env:
