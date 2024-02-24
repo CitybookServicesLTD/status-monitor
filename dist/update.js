@@ -138,7 +138,8 @@ const update = async (shouldCommit = false) => {
          * Check whether the site is online
          */
         const performTestOnce = async () => {
-            if (site.check === "tcp-ping") {
+            console.log("Site Check: ", site.check);
+if (site.check === "tcp-ping") {
                 console.log("Using tcp-ping instead of curl");
                 try {
                     let status = "up";
