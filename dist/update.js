@@ -139,7 +139,7 @@ const update = async (shouldCommit = false) => {
          */
         const performTestOnce = async () => {
             console.log("Site Check: ", site.check);
-if (site.check === "tcp-ping") {
+            if (site.check === "tcp-ping") {
                 console.log("Using tcp-ping instead of curl");
                 try {
                     let status = "up";
@@ -283,7 +283,7 @@ if (site.check === "tcp-ping") {
                 }
                 catch (error) {
                     console.log("ERROR Got pinging error from async call", error);
-                    console.log("Error Keys:", Object.keys(error));
+                    console.log("Error Keys:", typeof (error));
                     return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
                 }
             }
