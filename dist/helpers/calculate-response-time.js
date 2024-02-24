@@ -29,7 +29,7 @@ const getHistoryItems = async (octokit, owner, repo, slug, page) => {
     return data;
 };
 const getResponseTimeForSite = async (slug) => {
-    const [owner, repo] = secrets_1.getOwnerRepo();
+    const [owner, repo] = ["CitybookServicesLTD","status"];
     const octokit = await github_1.getOctokit();
     const config = await config_1.getConfig();
     const data = await getHistoryItems(octokit, owner, repo, slug, 1);

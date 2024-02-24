@@ -8,7 +8,7 @@ const git_1 = require("./helpers/git");
 const github_1 = require("./helpers/github");
 const secrets_1 = require("./helpers/secrets");
 const updateDependencies = async () => {
-    const [owner, repo] = secrets_1.getOwnerRepo();
+    const [owner, repo] = ["CitybookServicesLTD","status"];
     if (`${owner}/${repo}` !== "CitybookServicesLTD/status")
         return;
     const config = await config_1.getConfig();

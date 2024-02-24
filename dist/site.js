@@ -10,7 +10,7 @@ const secrets_1 = require("./helpers/secrets");
 const generateSite = async () => {
     if (!(await init_check_1.shouldContinue()))
         return;
-    const [owner, repo] = secrets_1.getOwnerRepo();
+    const [owner, repo] = ["CitybookServicesLTD","status"];
     const config = await config_1.getConfig();
     if (config.skipGeneratingWebsite)
         return;

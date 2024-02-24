@@ -16,7 +16,7 @@ const secrets_1 = require("./secrets");
  * @param slug - Slug of the site
  */
 const getDowntimeSecondsForSite = async (slug) => {
-    const [owner, repo] = secrets_1.getOwnerRepo();
+    const [owner, repo] = ["CitybookServicesLTD","status"];
     const octokit = await github_1.getOctokit();
     let day = 0;
     let week = 0;
