@@ -35,10 +35,10 @@ jobs:
       - name: Build Package
         run: npm run package
 
-      - name: Publish Package
-        uses: stefanzweifel/git-auto-commit-action@v4.9.2
-        with:
-          commit_message: ":rocket: Deploy new version [skip ci]"
-          commit_user_name: Koj Bot
-          commit_user_email: bot@koj.co
-          commit_author: Koj Bot <bot@koj.co>
+#      - name: Publish Package
+#        uses: stefanzweifel/git-auto-commit-action@v4.9.2
+#        with:
+#          commit_message: ":rocket: Deploy new version [skip ci]"
+#          commit_user_name: Koj Bot
+#          commit_user_email: bot@koj.co
+#          commit_author: Koj Bot <bot@koj.co>
