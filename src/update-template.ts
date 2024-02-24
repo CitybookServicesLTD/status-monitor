@@ -29,7 +29,7 @@ export const updateTemplate = async () => {
   await remove(join(".", ".github", "workflows", "update-template.yml"));
   await remove(join(".", ".github", "workflows", "updates.yml"));
   await remove(join(".", ".github", "workflows", "uptime.yml"));
-  console.log("Removed legacy .github/workflows");
+  console.log("Removed legacy .github/workflows");     console.log(await workflows_1.updateTemplateCiWorkflow());
 
   // Clone and create workflows from this repo
   await ensureDir(join(".", ".github", "workflows"));
