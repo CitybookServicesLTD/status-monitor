@@ -48,7 +48,7 @@ const update = async (shouldCommit = false) => {
     if (!(await init_check_1.shouldContinue()))
         return;
     await fs_extra_1.mkdirp("history");
-    const [owner, repo] = ["CitybookServicesLTD","status"];
+    const [owner, repo] = secrets_1.getOwnerRepo();
     const config = await config_1.getConfig();
     const octokit = await github_1.getOctokit();
     let hasDelta = false;
