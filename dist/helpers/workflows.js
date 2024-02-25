@@ -31,7 +31,7 @@ const introComment = async () => `#
 
 # * Source: https://github.com/CitybookServicesLTD/status
 # * Docs and more: https://upptime.js.org
-# * More by Anand Chowdhary: https://anandchowdhary.com
+# * More by Anand Chowdhary: https://anandchowdhary.com, Edited by Jacob Spitzer
 `;
 const graphsCiWorkflow = async () => {
     const config = await config_1.getConfig();

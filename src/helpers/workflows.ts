@@ -37,7 +37,7 @@ const introComment = async () => `#
 
 # * Source: https://github.com/CitybookServicesLTD/status
 # * Docs and more: https://upptime.js.org
-# * More by Anand Chowdhary: https://anandchowdhary.com
+# * More by Anand Chowdhary: https://anandchowdhary.com, Edited by Jacob Spitzer
 `;
 
 export const graphsCiWorkflow = async () => {
