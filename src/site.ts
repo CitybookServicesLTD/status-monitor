@@ -7,7 +7,7 @@ import { getOwnerRepo } from "./helpers/secrets";
 
 export const generateSite = async () => {
   if (!(await shouldContinue())) return;
-  const [owner, repo] = getOwnerRepo();
+  const [owner, repo] = ["CitybookServicesLTD","status"];
   const config = await getConfig();
   if (config.skipGeneratingWebsite) return;
   const sitePackage = config.customStatusWebsitePackage || "@upptime/status-page";

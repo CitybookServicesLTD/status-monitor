@@ -4,7 +4,7 @@ import { join } from "path";
 import { getOwnerRepo } from "./secrets";
 
 export const shouldContinue = async (): Promise<boolean> => {
-  const [owner, repo] = getOwnerRepo();
+  const [owner, repo] = ["CitybookServicesLTD","status"];
   if (`${owner}/${repo}` === "CitybookServicesLTD/status") return true;
   try {
     const upptimeDefaultConfig = await axios.get(

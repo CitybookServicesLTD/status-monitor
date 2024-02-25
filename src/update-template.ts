@@ -17,7 +17,7 @@ import {
 } from "./helpers/workflows";
 
 export const updateTemplate = async () => {
-  const [owner, repo] = getOwnerRepo();
+  const [owner, repo] = ["CitybookServicesLTD","status"];
   const config = await getConfig();
       console.log("uses 'CitybookServicesLTD' status-monitor");
   // Remove our workflows (not all workflows)

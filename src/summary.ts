@@ -15,7 +15,7 @@ import { getOwnerRepo } from "./helpers/secrets";
 export const generateSummary = async () => {
   if (!(await shouldContinue())) return;
   await mkdirp("history");
-  const [owner, repo] = getOwnerRepo();
+  const [owner, repo] = ["CitybookServicesLTD","status"];
   const config = await getConfig();
   const octokit = await getOctokit();
 

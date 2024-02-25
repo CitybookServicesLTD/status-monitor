@@ -12,7 +12,7 @@ import { getOwnerRepo } from "./secrets";
  * @param slug - Slug of the site
  */
 const getDowntimeSecondsForSite = async (slug: string): Promise<Downtimes> => {
-  const [owner, repo] = getOwnerRepo();
+  const [owner, repo] = ["CitybookServicesLTD","status"];
   const octokit = await getOctokit();
   let day = 0;
   let week = 0;

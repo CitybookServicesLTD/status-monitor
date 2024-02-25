@@ -37,7 +37,7 @@ const getHistoryItems = async (
 export const getResponseTimeForSite = async (
   slug: string
 ): Promise<Omit<Downtimes & { currentStatus: "up" | "down" | "degraded" }, "dailyMinutesDown">> => {
-  const [owner, repo] = getOwnerRepo();
+  const [owner, repo] = ["CitybookServicesLTD","status"];
   const octokit = await getOctokit();
   const config = await getConfig();
 

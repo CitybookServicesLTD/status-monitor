@@ -44,7 +44,7 @@ function getHumanReadableTimeDifference(startTime: Date): string {
 export const update = async (shouldCommit = false) => {
   if (!(await shouldContinue())) return;
   await mkdirp("history");
-  const [owner, repo] = getOwnerRepo();
+  const [owner, repo] = ["CitybookServicesLTD","status"];
 
   const config = await getConfig();
   const octokit = await getOctokit();
