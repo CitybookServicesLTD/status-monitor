@@ -284,7 +284,7 @@ ${config.summaryEndHtmlComment || "<!--end: status pages-->"}${endText}`;
           repo,
           names: [
             ...(repoInfo.data.topics || []),
-            "uptime-monitor",
+            "status-monitor",
             "status-page",
             "CitybookServicesLTD",
           ].filter((value, index, array) => array.indexOf(value) === index),
@@ -293,7 +293,7 @@ ${config.summaryEndHtmlComment || "<!--end: status pages-->"}${endText}`;
         "Possibly updated to to",
         [
           ...(repoInfo.data.topics || []),
-          "uptime-monitor",
+          "status-monitor",
           "status-page",
           "CitybookServicesLTD",
         ].filter((value, index, array) => array.indexOf(value) === index)

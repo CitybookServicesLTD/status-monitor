@@ -155,14 +155,14 @@ ${config.summaryEndHtmlComment || "<!--end: status pages-->"}${endText}`;
                     repo,
                     names: [
                         ...(repoInfo.data.topics || []),
-                        "uptime-monitor",
+                        "status-monitor",
                         "status-page",
                         "CitybookServicesLTD",
                     ].filter((value, index, array) => array.indexOf(value) === index),
                 });
             console.log("Possibly updated to to", [
                 ...(repoInfo.data.topics || []),
-                "uptime-monitor",
+                "status-monitor",
                 "status-page",
                 "CitybookServicesLTD",
             ].filter((value, index, array) => array.indexOf(value) === index));
