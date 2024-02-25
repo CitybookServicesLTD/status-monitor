@@ -289,7 +289,7 @@ const update = async (shouldCommit = false) => {
             }
             else {
                 const result = await request_1.curl(site);
-                console.log("Result from test", result.httpCode, result.totalTime);
+                console.log("Result from test '--edited'", result.httpCode, result.totalTime);
                 const responseTime = (result.totalTime * 1000).toFixed(0);
                 const expectedStatusCodes = (site.expectedStatusCodes || [
                     200,
