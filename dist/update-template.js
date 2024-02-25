@@ -84,5 +84,5 @@ const updateTemplate = async () => {
     git_1.push();
     console.log("All done!");
 };
-exports.updateTemplate = updateTemplate;
+// exports.updateTemplate = updateTemplate;
 //# sourceMappingURL=update-template.js.map
