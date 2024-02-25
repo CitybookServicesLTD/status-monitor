@@ -6,9 +6,8 @@ const path_1 = require("path");
 const config_1 = require("./helpers/config");
 const git_1 = require("./helpers/git");
 const github_1 = require("./helpers/github");
-const secrets_1 = require("./helpers/secrets");
 const updateDependencies = async () => {
-    const [owner, repo] = ["CitybookServicesLTD","status"];
+    const [owner, repo] = ["CitybookServicesLTD", "status"];
     if (`${owner}/${repo}` !== "CitybookServicesLTD/status")
         return;
     const config = await config_1.getConfig();
@@ -23,7 +22,7 @@ const updateDependencies = async () => {
             .split("\n")
             .filter((line) => line.includes("uses:"))
             .map((line) => line.split("uses:")[1].trim())
-            .filter((pkg) => pkg.startsWith("CitybookServicesLTD/"))
+            .filter((pkg) => pkg.startsWith("upptime/"))
             .forEach((pkg) => (uses[pkg] = pkg));
     }
     for await (const pkgOldVersion of Object.keys(uses)) {

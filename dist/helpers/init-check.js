@@ -7,9 +7,8 @@ exports.shouldContinue = void 0;
 const axios_1 = __importDefault(require("axios"));
 const fs_extra_1 = require("fs-extra");
 const path_1 = require("path");
-const secrets_1 = require("./secrets");
 const shouldContinue = async () => {
-    const [owner, repo] = ["CitybookServicesLTD","status"];
+    const [owner, repo] = ["CitybookServicesLTD", "status"];
     if (`${owner}/${repo}` === "CitybookServicesLTD/status")
         return true;
     try {

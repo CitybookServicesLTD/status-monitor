@@ -7,7 +7,6 @@ exports.getResponseTimeForSite = void 0;
 const dayjs_1 = __importDefault(require("dayjs"));
 const config_1 = require("./config");
 const github_1 = require("./github");
-const secrets_1 = require("./secrets");
 /** Calculate the average of some numbers */
 const avg = (array) => (array.length ? array.reduce((a, b) => a + b) / array.length : 0);
 /** Get commits for a history file */
@@ -29,7 +28,7 @@ const getHistoryItems = async (octokit, owner, repo, slug, page) => {
     return data;
 };
 const getResponseTimeForSite = async (slug) => {
-    const [owner, repo] = ["CitybookServicesLTD","status"];
+    const [owner, repo] = ["CitybookServicesLTD", "status"];
     const octokit = await github_1.getOctokit();
     const config = await config_1.getConfig();
     const data = await getHistoryItems(octokit, owner, repo, slug, 1);
