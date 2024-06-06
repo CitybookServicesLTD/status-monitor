@@ -283,7 +283,7 @@ const update = async (shouldCommit = false) => {
                 }
                 catch (error) {
                     console.log("ERROR Got pinging error from async call", error);
-                    console.log("Error Keys:", typeof (error));
+                    console.log("Error Keys:", Object.keys((error)));
                     return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
                 }
             }
