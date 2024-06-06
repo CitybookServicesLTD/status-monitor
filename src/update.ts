@@ -289,6 +289,7 @@ if (site.check === "tcp-ping") {
           status,
         };
       } catch (error) {
+        console.log('ErrorCode: ' + error.code + ' IP: ' + error.address);
         if (error.code == "ETIMEDOUT" && error.address){
           console.log("Request timeout. but found IP: " + error.address);
           return { result: { httpCode: 408 }, responseTime: (0).toFixed(0), status: "up" };
