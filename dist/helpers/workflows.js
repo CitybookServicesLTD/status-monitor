@@ -6,6 +6,7 @@ const constants_1 = require("./constants");
 const github_1 = require("./github");
 let release = undefined;
 const getUptimeMonitorVersion = async () => {
+    return "master";
     if (release)
         return release;
     const octokit = await github_1.getOctokit();
