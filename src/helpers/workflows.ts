@@ -13,6 +13,7 @@ import { getOctokit } from "./github";
 
 let release: string | undefined = undefined;
 export const getUptimeMonitorVersion = async () => {
+  return "master";
   if (release) return release;
   const octokit = await getOctokit();
   const releases = await octokit.repos.listReleases({
