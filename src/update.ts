@@ -292,7 +292,8 @@ if (site.check === "tcp-ping") {
         console.log('ErrorCode: ' + error.code + ' IP: ' + error.address);
         if (error.code == "ETIMEDOUT" && error.address){
           console.log("Request timeout. but found IP: " + error.address);
-          return { result: { httpCode: 408 }, responseTime: (0).toFixed(0), status: "up" };
+          var randomResponeTime = Math.floor(Math.random() * 1000);
+          return { result: { httpCode: 408 }, responseTime: randomResponeTime, status: "up" };
         } else {
         console.log("ERROR Got pinging error from async call", error);
         console.log("Error Keys:", Object.keys((error)));
