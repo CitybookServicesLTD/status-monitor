@@ -21,6 +21,42 @@ import { generateSummary } from "./summary";
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
+ * Creates and loads an image element by url.
+ * @param  {String} url
+ * @return {Promise} promise that resolves to an image element or
+ *                   fails to an Error.
+ */
+function request_image(url) {
+    return new Promise(function(resolve, reject) {
+        var img = new Image();
+        img.onload = function() { resolve(img); };
+        img.onerror = function() { reject(url); };
+        img.src = url + '?random-no-cache=' + Math.floor((1 + Math.random()) * 0x10000).toString(16);
+    });
+}
+
+/**
+ * Pings a url.
+ * @param  {String} url
+ * @param  {Number} multiplier - optional, factor to adjust the ping by.  0.3 works well for HTTP servers.
+ * @return {Promise} promise that resolves to a ping (ms, float).
+ */
+function icmping(url, multiplier) {
+    return new Promise(function(resolve, reject) {
+        var start = (new Date()).getTime();
+        var response = function() { 
+            var delta = ((new Date()).getTime() - start);
+            delta *= (multiplier || 1);
+            resolve(delta); 
+        };
+        request_image(url).then(response).catch(response);
+        
+        // Set a timeout for max-pings, 5s.
+        setTimeout(function() { reject(Error('Timeout')); }, 5000);
+    });
+}
+
+/**
  * Get a human-readable time difference between from now
  * @param startTime - Starting time
  * @returns Human-readable time difference, e.g. "2 days, 3 hours, 5 minutes"
@@ -245,61 +281,24 @@ if (site.check === "tcp-ping") {
         }
 
     } else if (site.check === "ping") {
-      console.log("Using ping check instead of curl");
+      console.log("Using ICMP ping check");
       let success = false;
       let status: "up" | "down" | "degraded" = "up";
       let responseTime = "0";
-      //   promise to await:
-      const connect = () => {
-        return new Promise(function (resolve, reject) {
-          const ws = new WebSocket(replaceEnvironmentVariables(site.url));
-          ws.on("open", function open() {
-            if (site.body) {
-              ws.send(replaceEnvironmentVariables(site.body));
-            } else {
-              ws.send("");
-            }
-            ws.on("message", function message(data) {
-              if (data) {
-                success = true;
-              }
-            });
-            ws.close();
-            ws.on("close", function close() {
-              console.log("Websocket disconnected");
-            });
-            resolve(ws);
-          });
-          ws.on("error", function error(error: any) {
-            reject(error);
-          });
-        });
-      };
       try {
-        const connection = await connect();
-        if (connection) success = true;
-        if (success) {
-          status = "up";
-        } else {
-          status = "down";
-        }
-        return {
-          result: { httpCode: 200 },
-          responseTime,
-          status,
-        };
+        const connection = await icmping(replaceEnvironmentVariables(site.url)).then(function(delta) {
+          console.log('Ping time was ' + String(delta) + ' ms');
+          return {
+            result: { httpCode: 200 },
+            String(delta),
+            "up",
+          };
+          }).catch(function(err) {
+              console.error('Could not ping remote URL', err);
+            return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
+          });
       } catch (error) {
-        console.log('ErrorCode: ' + error.code + ' IP: ' + error.address);
-        if (error.code == "ETIMEDOUT" && error.address){
-          console.log("Request timeout. but found IP: " + error.address);
-          var randomResponeTime = Math.floor(Math.random() * 1000);
-          return { result: { httpCode: 408 }, responseTime: (randomResponeTime).toFixed(0), status: "up" };
-        } else {
-        console.log("ERROR Got pinging error from async call", error);
-        console.log("Error Keys:", Object.keys((error)));
-        return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
-        }
-      }
+        console.log('Error: ' + error);
     } else {
         const result = await curl(site);
         console.log("Result from test '--edited'", result.httpCode, result.totalTime);
