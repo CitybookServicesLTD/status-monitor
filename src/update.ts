@@ -26,7 +26,7 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
  * @return {Promise} promise that resolves to an image element or
  *                   fails to an Error.
  */
-function request_image(url) {
+function request_image(url): Promise<function> =>{
     return new Promise(function(resolve, reject) {
         var img = new Image();
         img.onload = function() { resolve(img); };
