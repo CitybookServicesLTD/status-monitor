@@ -232,18 +232,16 @@ if (site.check === "tcp-ping") {
           return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
         }
     } else if (site.check === "ping") {
-      console.log("Using ICMP ping check");
-      let success = false;
-      let status: "up" | "down" | "degraded" = "up";
-      let responseTime = "0";
-        const connection = await icmping(replaceEnvironmentVariables(site.url)).then(function(delta) {
-          console.log('Ping time was ' + String(delta) + ' ms');
-          return { result: { httpCode: 200 }, responseTime: (delta).toFixed(0), status: "up" };
-          }).catch(function(err) {
-              console.error('Could not ping remote URL', err);
-            return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
-          });
-    } else if (site.check === "ws") {
+    console.log("Using ICMP ping check");
+    try {
+      const delta = await icmping(replaceEnvironmentVariables(site.url));
+      console.log('Ping time was ' + String(delta) + ' ms');
+      return { result: { httpCode: 200 }, responseTime: (delta).toFixed(0), status: "up" };
+    } catch (err) {
+      console.error('Could not ping remote URL', err);
+      return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
+    }
+  } else if (site.check === "ws") {
         console.log("Using websocket check instead of curl");
         let success = false;
         let status: "up" | "down" | "degraded" = "up";
