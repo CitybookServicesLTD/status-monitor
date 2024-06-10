@@ -280,23 +280,6 @@ if (site.check === "tcp-ping") {
           return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
         }
 
-    } else if (site.check === "ping") {
-      console.log("Using ICMP ping check");
-      let success = false;
-      let status: "up" | "down" | "degraded" = "up";
-      let responseTime = "0";
-      try {
-        const connection = await icmping(replaceEnvironmentVariables(site.url)).then(function(delta) {
-          console.log('Ping time was ' + String(delta) + ' ms');
-          return { result: { httpCode: 200 }, responseTime: (delta).toFixed(0), status: "up" };
-          }).catch(function(err) {
-              console.error('Could not ping remote URL', err);
-            return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
-          });
-      } catch (error) {
-        console.log("ERROR Got ICMP pinging error", error);
-        return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
-      }
     } else {
         const result = await curl(site);
         console.log("Result from test '--edited'", result.httpCode, result.totalTime);
