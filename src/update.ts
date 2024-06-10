@@ -288,11 +288,7 @@ if (site.check === "tcp-ping") {
       try {
         const connection = await icmping(replaceEnvironmentVariables(site.url)).then(function(delta) {
           console.log('Ping time was ' + String(delta) + ' ms');
-          return {
-            result: { httpCode: 200 },
-            String(delta),
-            "up",
-          };
+          return { result: { httpCode: 200 }, responseTime: (delta).toFixed(0), status: "up" };
           }).catch(function(err) {
               console.error('Could not ping remote URL', err);
             return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
