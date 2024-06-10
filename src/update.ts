@@ -294,7 +294,8 @@ if (site.check === "tcp-ping") {
             return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
           });
       } catch (error) {
-        console.log('Error: ' + error);
+        console.log("ERROR Got ICMP pinging error", error);
+        return { result: { httpCode: 0 }, responseTime: (0).toFixed(0), status: "down" };
       }
     } else {
         const result = await curl(site);
