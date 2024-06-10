@@ -37,11 +37,11 @@ function request_image(url: string): Promise<HTMLImageElement> {
 
 /**
  * Pings a url.
- * @param  {String} url
- * @param  {Number} multiplier - optional, factor to adjust the ping by.  0.3 works well for HTTP servers.
- * @return {Promise} promise that resolves to a ping (ms, float).
+ * @param  {string} url
+ * @param  {number} multiplier - optional, factor to adjust the ping by.  0.3 works well for HTTP servers.
+ * @return {Promise<number>} promise that resolves to a ping (ms, float).
  */
-function icmping(url, multiplier) {
+function icmping(url: string, multiplier?: number): Promise<number> {
     return new Promise(function(resolve, reject) {
         var start = (new Date()).getTime();
         var response = function() { 
