@@ -22,11 +22,11 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Creates and loads an image element by url.
- * @param  {String} url
- * @return {Promise} promise that resolves to an image element or
+ * @param  {string} url
+ * @return {Promise<HTMLImageElement>} promise that resolves to an image element or
  *                   fails to an Error.
  */
-function request_image(url: string): Promise<function> =>{
+function request_image(url: string): Promise<HTMLImageElement> {
     return new Promise(function(resolve, reject) {
         var img = new Image();
         img.onload = function() { resolve(img); };
