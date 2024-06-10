@@ -295,6 +295,7 @@ if (site.check === "tcp-ping") {
           });
       } catch (error) {
         console.log('Error: ' + error);
+      }
     } else {
         const result = await curl(site);
         console.log("Result from test '--edited'", result.httpCode, result.totalTime);
